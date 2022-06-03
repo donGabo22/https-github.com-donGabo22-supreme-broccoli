@@ -30,6 +30,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,11 +44,21 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(68, 158);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "label1";
+            // 
             // Movil_Mesero_Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Movil_Mesero_Inicio";
             this.Text = "Movil_Mesero_Inicio";
@@ -60,5 +71,6 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
