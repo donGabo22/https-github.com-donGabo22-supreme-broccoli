@@ -40,18 +40,20 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // 
             // pbProgreso
             // 
-            this.pbProgreso.Location = new System.Drawing.Point(60, 394);
+            this.pbProgreso.Location = new System.Drawing.Point(42, 236);
+            this.pbProgreso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbProgreso.Name = "pbProgreso";
-            this.pbProgreso.Size = new System.Drawing.Size(680, 34);
+            this.pbProgreso.Size = new System.Drawing.Size(476, 20);
             this.pbProgreso.TabIndex = 5;
             // 
             // lblComentario
             // 
             this.lblComentario.AutoSize = true;
             this.lblComentario.BackColor = System.Drawing.Color.Transparent;
-            this.lblComentario.Location = new System.Drawing.Point(60, 431);
+            this.lblComentario.Location = new System.Drawing.Point(42, 259);
+            this.lblComentario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblComentario.Name = "lblComentario";
-            this.lblComentario.Size = new System.Drawing.Size(680, 50);
+            this.lblComentario.Size = new System.Drawing.Size(453, 30);
             this.lblComentario.TabIndex = 4;
             this.lblComentario.Text = "Iniciando Configuración Inicial...\r\nno apague ni desconectes el dispositivo mient" +
     "ras el software está en ejecución...[1/4]";
@@ -60,7 +62,8 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(167, -30);
+            this.pictureBox1.Location = new System.Drawing.Point(117, -18);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(495, 418);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -73,15 +76,16 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // 
             // Form_InicializandoInstalación
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.fondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(808, 534);
+            this.ClientSize = new System.Drawing.Size(1038, 452);
             this.Controls.Add(this.pbProgreso);
             this.Controls.Add(this.lblComentario);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form_InicializandoInstalación";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicializando";

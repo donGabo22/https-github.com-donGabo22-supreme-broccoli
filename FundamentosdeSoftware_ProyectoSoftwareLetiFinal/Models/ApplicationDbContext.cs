@@ -17,5 +17,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Models
         }
         public DbSet<Registros> Registros { get; set; }
 
+        public DbSet<Empleados> Empleados { get; set; }
+
     }
 }

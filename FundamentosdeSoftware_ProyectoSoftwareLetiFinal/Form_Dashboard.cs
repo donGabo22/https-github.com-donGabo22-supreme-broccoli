@@ -85,7 +85,14 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         public static string something() {
             return "Algo";
         }
-        
+
+        private void btnRol_Click(object sender, EventArgs e)
+        {
+            FrmEmpleados FC = new FrmEmpleados();
+            
+            FC.Show();
+        }
+
         
     }
 
