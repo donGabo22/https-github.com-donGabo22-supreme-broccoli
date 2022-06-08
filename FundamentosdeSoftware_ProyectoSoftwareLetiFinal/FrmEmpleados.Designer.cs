@@ -58,6 +58,7 @@
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.LblRFC = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -66,9 +67,10 @@
             // 
             this.chBxSabado.AutoSize = true;
             this.chBxSabado.BackColor = System.Drawing.Color.Transparent;
-            this.chBxSabado.Location = new System.Drawing.Point(795, 227);
+            this.chBxSabado.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.chBxSabado.Location = new System.Drawing.Point(777, 211);
             this.chBxSabado.Name = "chBxSabado";
-            this.chBxSabado.Size = new System.Drawing.Size(218, 19);
+            this.chBxSabado.Size = new System.Drawing.Size(250, 21);
             this.chBxSabado.TabIndex = 74;
             this.chBxSabado.Text = "Sabado-Domingo 9:00am a 11:00pm";
             this.chBxSabado.UseVisualStyleBackColor = false;
@@ -77,18 +79,17 @@
             // 
             this.chBxLunes.AutoSize = true;
             this.chBxLunes.BackColor = System.Drawing.Color.Transparent;
-            this.chBxLunes.Checked = true;
-            this.chBxLunes.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chBxLunes.Location = new System.Drawing.Point(795, 202);
+            this.chBxLunes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.chBxLunes.Location = new System.Drawing.Point(777, 186);
             this.chBxLunes.Name = "chBxLunes";
-            this.chBxLunes.Size = new System.Drawing.Size(192, 19);
+            this.chBxLunes.Size = new System.Drawing.Size(222, 21);
             this.chBxLunes.TabIndex = 73;
             this.chBxLunes.Text = "Lunes-Viernes 9:00pm a 1:00am";
             this.chBxLunes.UseVisualStyleBackColor = false;
             // 
             // MCalendario
             // 
-            this.MCalendario.Location = new System.Drawing.Point(777, 12);
+            this.MCalendario.Location = new System.Drawing.Point(777, 2);
             this.MCalendario.Name = "MCalendario";
             this.MCalendario.TabIndex = 72;
             // 
@@ -96,9 +97,10 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(795, 182);
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(777, 166);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(144, 15);
+            this.label10.Size = new System.Drawing.Size(172, 17);
             this.label10.TabIndex = 71;
             this.label10.Text = "Horarios y dias de trabajo:";
             // 
@@ -108,8 +110,7 @@
             this.cbxSalario.Items.AddRange(new object[] {
             "$ 1500 (Mil quinientos pesos MXN)",
             "$ 2000 (Dos mil pesos MXN)",
-            "$2500 (Dos mil quinientos pesos MXN)",
-            "Otro... "});
+            "$2500 (Dos mil quinientos pesos MXN)"});
             this.cbxSalario.Location = new System.Drawing.Point(122, 169);
             this.cbxSalario.Name = "cbxSalario";
             this.cbxSalario.Size = new System.Drawing.Size(121, 23);
@@ -120,9 +121,10 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label9.Location = new System.Drawing.Point(4, 173);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(45, 15);
+            this.label9.Size = new System.Drawing.Size(54, 17);
             this.label9.TabIndex = 69;
             this.label9.Text = "Salario:";
             // 
@@ -139,10 +141,11 @@
             this.cbxRol.Size = new System.Drawing.Size(263, 23);
             this.cbxRol.TabIndex = 68;
             this.cbxRol.Text = "Selecciona la ocupacion del empleado";
+            this.cbxRol.SelectedIndexChanged += new System.EventHandler(this.cbxRol_SelectedIndexChanged);
             // 
             // dtpFechaNacimiento
             // 
-            this.dtpFechaNacimiento.Location = new System.Drawing.Point(543, 106);
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(534, 143);
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
             this.dtpFechaNacimiento.Size = new System.Drawing.Size(195, 23);
             this.dtpFechaNacimiento.TabIndex = 66;
@@ -159,9 +162,10 @@
             // 
             this.rbtMasculino.AutoSize = true;
             this.rbtMasculino.BackColor = System.Drawing.Color.Transparent;
-            this.rbtMasculino.Location = new System.Drawing.Point(658, 31);
+            this.rbtMasculino.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rbtMasculino.Location = new System.Drawing.Point(640, 34);
             this.rbtMasculino.Name = "rbtMasculino";
-            this.rbtMasculino.Size = new System.Drawing.Size(80, 19);
+            this.rbtMasculino.Size = new System.Drawing.Size(89, 21);
             this.rbtMasculino.TabIndex = 64;
             this.rbtMasculino.Text = "Masculino";
             this.rbtMasculino.UseVisualStyleBackColor = false;
@@ -171,9 +175,10 @@
             this.rbtFemenino.AutoSize = true;
             this.rbtFemenino.BackColor = System.Drawing.Color.Transparent;
             this.rbtFemenino.Checked = true;
-            this.rbtFemenino.Location = new System.Drawing.Point(462, 31);
+            this.rbtFemenino.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rbtFemenino.Location = new System.Drawing.Point(444, 34);
             this.rbtFemenino.Name = "rbtFemenino";
-            this.rbtFemenino.Size = new System.Drawing.Size(78, 19);
+            this.rbtFemenino.Size = new System.Drawing.Size(87, 21);
             this.rbtFemenino.TabIndex = 63;
             this.rbtFemenino.TabStop = true;
             this.rbtFemenino.Text = "Femenino";
@@ -181,10 +186,11 @@
             // 
             // txtRFC
             // 
-            this.txtRFC.Location = new System.Drawing.Point(462, 69);
+            this.txtRFC.Location = new System.Drawing.Point(444, 72);
             this.txtRFC.Name = "txtRFC";
-            this.txtRFC.Size = new System.Drawing.Size(84, 23);
+            this.txtRFC.Size = new System.Drawing.Size(285, 23);
             this.txtRFC.TabIndex = 62;
+            this.txtRFC.TextChanged += new System.EventHandler(this.txtRFC_TextChanged);
             // 
             // txtApellidoPa
             // 
@@ -204,9 +210,10 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Location = new System.Drawing.Point(408, 35);
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(390, 38);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 15);
+            this.label8.Size = new System.Drawing.Size(41, 17);
             this.label8.TabIndex = 59;
             this.label8.Text = "Sexo:";
             // 
@@ -214,9 +221,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(408, 72);
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(390, 75);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(31, 15);
+            this.label7.Size = new System.Drawing.Size(35, 17);
             this.label7.TabIndex = 58;
             this.label7.Text = "RFC:";
             // 
@@ -224,16 +232,17 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(408, 112);
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(392, 147);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(120, 15);
+            this.label6.Size = new System.Drawing.Size(139, 17);
             this.label6.TabIndex = 57;
             this.label6.Text = "Fecha de nacimiento:";
             // 
             // dgvEmpleados
             // 
             this.dgvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEmpleados.Location = new System.Drawing.Point(4, 243);
+            this.dgvEmpleados.Location = new System.Drawing.Point(19, 243);
             this.dgvEmpleados.Name = "dgvEmpleados";
             this.dgvEmpleados.RowTemplate.Height = 25;
             this.dgvEmpleados.Size = new System.Drawing.Size(770, 264);
@@ -244,9 +253,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(4, 39);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 15);
+            this.label5.Size = new System.Drawing.Size(78, 17);
             this.label5.TabIndex = 55;
             this.label5.Text = "Nombre(s):";
             // 
@@ -254,9 +264,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(4, 76);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 15);
+            this.label4.Size = new System.Drawing.Size(116, 17);
             this.label4.TabIndex = 54;
             this.label4.Text = "Apellido Paterno:";
             // 
@@ -264,9 +275,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(4, 138);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 15);
+            this.label3.Size = new System.Drawing.Size(93, 17);
             this.label3.TabIndex = 53;
             this.label3.Text = "Rol a asignar:";
             // 
@@ -274,9 +286,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(4, 201);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 15);
+            this.label2.Size = new System.Drawing.Size(72, 17);
             this.label2.TabIndex = 52;
             this.label2.Text = "Buscador :";
             // 
@@ -284,9 +297,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(4, 12);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(4, 2);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 15);
+            this.label1.Size = new System.Drawing.Size(158, 31);
             this.label1.TabIndex = 51;
             this.label1.Text = "Empleados";
             // 
@@ -301,9 +316,10 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label11.Location = new System.Drawing.Point(4, 109);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(102, 15);
+            this.label11.Size = new System.Drawing.Size(120, 17);
             this.label11.TabIndex = 75;
             this.label11.Text = "Apellido Materno:";
             // 
@@ -357,13 +373,26 @@
             this.pictureBox1.TabIndex = 81;
             this.pictureBox1.TabStop = false;
             // 
-            // Empleados
+            // LblRFC
+            // 
+            this.LblRFC.AutoSize = true;
+            this.LblRFC.BackColor = System.Drawing.Color.Transparent;
+            this.LblRFC.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LblRFC.Location = new System.Drawing.Point(444, 98);
+            this.LblRFC.Name = "LblRFC";
+            this.LblRFC.Size = new System.Drawing.Size(238, 26);
+            this.LblRFC.TabIndex = 82;
+            this.LblRFC.Text = "Nota: Compruebe si su RFC es correcto,\r\n una vez registrado ya no se podra modifi" +
+    "car\r\n";
+            // 
+            // FrmEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.fondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1043, 519);
+            this.Controls.Add(this.LblRFC);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnModificar);
@@ -394,10 +423,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Empleados";
+            this.Name = "FrmEmpleados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Empleados";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -437,5 +465,6 @@
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label LblRFC;
     }
 }

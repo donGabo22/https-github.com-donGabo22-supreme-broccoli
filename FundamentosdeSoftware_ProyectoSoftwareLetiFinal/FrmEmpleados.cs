@@ -18,20 +18,36 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
     {
 
         public int id = 0;
+        
 
         public int Id { get; private set; }
+        
         public FrmEmpleados()
         {
             InitializeComponent();
+            LblRFC.Enabled = false;
+            btnModificar.Enabled = false;
+            btnEliminar.Enabled = false;
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            AgregarEmplados();
-            TodosClientes();
+            if (txtRFC.Text!="" && txtNombre.Text!=""&& txtRFC.Text!=""&& txtApellidoPa.Text!="")
+            {
+                AgregarEmplados();
+                TodosClientes();
+            }
+            else
+            {
+                MessageBox.Show("Rellenar los campos faltantes");
+                
+            }
+           
         }
         private void btnModificar_Click(object sender, EventArgs e)
         {
+            txtRFC.Enabled = false;
+            btnRegistrar.Enabled = false;
             ModificarDatos();
             TodosClientes();
         }
@@ -42,6 +58,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         }
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
+           
             LimpiarTexto();
         }
         private void txtBuscador_TextChanged(object sender, EventArgs e)
@@ -97,7 +114,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
                         Empleado1.Rol_Asignado = cbxRol.Text;
                         Empleado1.Salario = cbxSalario.Text;
                         Empleado1.Sexo = rbtFemenino.Checked ? "Femenino" : "Masculino";
-                        Empleado1.RFC = txtRFC.Text;
+                       // Empleado1.RFC = txtRFC.Text;
                         Empleado1.Fecha_Nacimiento = dtpFechaNacimiento.Value.Date;
                         Empleado1.Horario = chBxLunes.Checked ? "Lunes-Viernes 9:00pm a 1:00am" : "Sabado-Domingo 9:00am a 11:00pm";
                         context.SaveChanges();
@@ -129,6 +146,11 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             txtApellidoMaterno.Text = "";
             txtBuscador.Text = "";
             txtRFC.Text = "";
+            btnRegistrar.Enabled = true;
+            txtRFC.Enabled=true;
+            btnModificar.Enabled = false;
+            btnEliminar.Enabled = false;
+            LblRFC.Enabled = false;
         }
         private void BuscarClientes()
         {
@@ -155,7 +177,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             {
                 rbtMasculino.Checked = true;
             }
-            txtRFC.Text = dgvEmpleados.CurrentRow.Cells[7].Value.ToString();
+            // txtRFC.Text = dgvEmpleados.CurrentRow.Cells[7].Value.ToString();
             dtpFechaNacimiento.Value = Convert.ToDateTime(dgvEmpleados.CurrentRow.Cells[8].Value.ToString());
             if (dgvEmpleados.CurrentRow.Cells[9].Value.ToString() == "Lunes-Viernes 9:00pm a 1:00am")//a ver si esto esta bien+++++++
             {
@@ -165,7 +187,62 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             {
                 chBxSabado.Checked = true;
             }
-
+            btnRegistrar.Enabled = false;
+            txtRFC.Enabled = false;
+            btnEliminar.Enabled = true;
+            btnModificar.Enabled = true;
         }
+
+        private void cbxRol_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbxRol.Text== "Otro...")
+            {
+                MessageBox.Show("Lo sentimos, por el momento solo tenemos esos puestos");
+                btnRegistrar.Enabled = false;
+                btnModificar.Enabled = false;
+                btnEliminar.Enabled = false;
+            }
+            /* else
+             {
+                 btnRegistrar.Enabled = true;
+                 btnModificar.Enabled = true;
+                 btnEliminar.Enabled  = true; 
+
+             }*/
+            if (cbxRol.Text!="Mesero"&&cbxRol.Text!="Cajero"&&cbxRol.Text!="Chef"&&cbxRol.Text!= "Otro...")
+            {
+                MessageBox.Show("No se puede Ocupar otro puesto que no sea Mesero, Cajero o Chef");
+                btnRegistrar.Enabled=false;
+            }
+            else
+            {
+                btnRegistrar.Enabled=true;
+            }
+        }
+
+        private void txtRFC_TextChanged(object sender, EventArgs e)
+        {
+            LblRFC.Enabled = true;
+            using (var context = new ApplicationDbContext())
+            {
+               bool existe= context.Empleados.Any(x => x.RFC.Equals(txtRFC.Text));
+                //preguntaremos si existe
+                if (existe==true)
+                {
+                    //si no existe se agrega
+                    MessageBox.Show("El RFC: "+txtRFC.Text+" ya a sido registrado, porfavor compruebelo");
+                    btnRegistrar.Enabled=false;
+
+                }
+                else
+                {
+                   existe= false;
+                    btnRegistrar.Enabled=true;
+                    
+                }
+                
+            }
+        }
+
     }
 }
