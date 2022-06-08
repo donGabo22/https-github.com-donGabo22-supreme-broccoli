@@ -19,5 +19,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Models
 
         public DbSet<Empleados> Empleados { get; set; }
 
+        public DbSet<Menuu> Menuu { get; set; }
+
     }
 }

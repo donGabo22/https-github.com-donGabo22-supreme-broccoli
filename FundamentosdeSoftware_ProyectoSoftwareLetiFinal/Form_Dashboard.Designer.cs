@@ -69,9 +69,9 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.panel2.Controls.Add(this.label4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 90);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(128, 359);
+            this.panel2.Size = new System.Drawing.Size(128, 441);
             this.panel2.TabIndex = 22;
             // 
             // btnRol
@@ -80,7 +80,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.btnRol.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.usuario;
             this.btnRol.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRol.Location = new System.Drawing.Point(2, 58);
-            this.btnRol.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRol.Margin = new System.Windows.Forms.Padding(2);
             this.btnRol.Name = "btnRol";
             this.btnRol.Size = new System.Drawing.Size(78, 69);
             this.btnRol.TabIndex = 2;
@@ -93,12 +93,11 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.btnMenu.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.menu;
             this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMenu.Location = new System.Drawing.Point(2, 175);
-            this.btnMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(78, 69);
             this.btnMenu.TabIndex = 3;
             this.btnMenu.UseVisualStyleBackColor = false;
-            
             // 
             // BtnCaja
             // 
@@ -106,12 +105,11 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.BtnCaja.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.caja;
             this.BtnCaja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnCaja.Location = new System.Drawing.Point(0, 286);
-            this.BtnCaja.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnCaja.Margin = new System.Windows.Forms.Padding(2);
             this.BtnCaja.Name = "BtnCaja";
             this.BtnCaja.Size = new System.Drawing.Size(78, 69);
             this.BtnCaja.TabIndex = 4;
             this.BtnCaja.UseVisualStyleBackColor = false;
-            
             // 
             // btnConfiguracion
             // 
@@ -119,7 +117,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.btnConfiguracion.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.configuracion4;
             this.btnConfiguracion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnConfiguracion.Location = new System.Drawing.Point(2, 388);
-            this.btnConfiguracion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConfiguracion.Margin = new System.Windows.Forms.Padding(2);
             this.btnConfiguracion.Name = "btnConfiguracion";
             this.btnConfiguracion.Size = new System.Drawing.Size(78, 69);
             this.btnConfiguracion.TabIndex = 5;
@@ -175,7 +173,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.panel1.Controls.Add(this.lblFecha);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(685, 90);
             this.panel1.TabIndex = 21;
@@ -208,7 +206,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // 
             this.pbFoto.Image = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.usuario;
             this.pbFoto.Location = new System.Drawing.Point(0, 2);
-            this.pbFoto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbFoto.Margin = new System.Windows.Forms.Padding(2);
             this.pbFoto.Name = "pbFoto";
             this.pbFoto.Size = new System.Drawing.Size(105, 80);
             this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -282,7 +280,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(685, 449);
+            this.ClientSize = new System.Drawing.Size(685, 531);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label9);
@@ -290,7 +288,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Dashboard";

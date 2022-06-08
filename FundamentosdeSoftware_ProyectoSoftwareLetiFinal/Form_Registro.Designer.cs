@@ -63,9 +63,10 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(548, 397);
+            this.linkLabel1.Location = new System.Drawing.Point(384, 238);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(117, 25);
+            this.linkLabel1.Size = new System.Drawing.Size(78, 15);
             this.linkLabel1.TabIndex = 6;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Visitar Pagina";
@@ -74,9 +75,10 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // 
             this.button1.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.instagram;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(893, 436);
+            this.button1.Location = new System.Drawing.Point(625, 262);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 96);
+            this.button1.Size = new System.Drawing.Size(69, 58);
             this.button1.TabIndex = 5;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -85,9 +87,10 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Location = new System.Drawing.Point(74, 314);
+            this.label8.Location = new System.Drawing.Point(52, 188);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(16, 25);
+            this.label8.Size = new System.Drawing.Size(10, 15);
             this.label8.TabIndex = 74;
             this.label8.Text = ".";
             // 
@@ -96,7 +99,8 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.pbcorrecto.BackColor = System.Drawing.Color.Transparent;
             this.pbcorrecto.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.pixlr_bg_result__3_;
             this.pbcorrecto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbcorrecto.Location = new System.Drawing.Point(668, 197);
+            this.pbcorrecto.Location = new System.Drawing.Point(468, 118);
+            this.pbcorrecto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbcorrecto.Name = "pbcorrecto";
             this.pbcorrecto.Size = new System.Drawing.Size(76, 75);
             this.pbcorrecto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -108,9 +112,10 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.pberror.BackColor = System.Drawing.Color.Transparent;
             this.pberror.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.pixlr_bg_result__2_;
             this.pberror.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pberror.Location = new System.Drawing.Point(668, 197);
+            this.pberror.Location = new System.Drawing.Point(468, 118);
+            this.pberror.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pberror.Name = "pberror";
-            this.pberror.Size = new System.Drawing.Size(76, 75);
+            this.pberror.Size = new System.Drawing.Size(53, 45);
             this.pberror.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pberror.TabIndex = 72;
             this.pberror.TabStop = false;
@@ -119,17 +124,19 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // pbrTrabajo
             // 
             this.pbrTrabajo.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pbrTrabajo.Location = new System.Drawing.Point(71, 399);
+            this.pbrTrabajo.Location = new System.Drawing.Point(50, 239);
+            this.pbrTrabajo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbrTrabajo.Name = "pbrTrabajo";
-            this.pbrTrabajo.Size = new System.Drawing.Size(646, 34);
+            this.pbrTrabajo.Size = new System.Drawing.Size(452, 20);
             this.pbrTrabajo.TabIndex = 71;
             // 
             // txbConfirmar
             // 
-            this.txbConfirmar.Location = new System.Drawing.Point(316, 268);
+            this.txbConfirmar.Location = new System.Drawing.Point(221, 161);
+            this.txbConfirmar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txbConfirmar.Name = "txbConfirmar";
             this.txbConfirmar.PlaceholderText = "Confirma tu contraseña";
-            this.txbConfirmar.Size = new System.Drawing.Size(331, 31);
+            this.txbConfirmar.Size = new System.Drawing.Size(233, 23);
             this.txbConfirmar.TabIndex = 69;
             this.txbConfirmar.TextChanged += new System.EventHandler(this.txbConfirmar_TextChanged);
             // 
@@ -137,9 +144,10 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // 
             this.btnFinalizarRegistro.BackColor = System.Drawing.Color.Transparent;
             this.btnFinalizarRegistro.Enabled = false;
-            this.btnFinalizarRegistro.Location = new System.Drawing.Point(316, 340);
+            this.btnFinalizarRegistro.Location = new System.Drawing.Point(221, 204);
+            this.btnFinalizarRegistro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnFinalizarRegistro.Name = "btnFinalizarRegistro";
-            this.btnFinalizarRegistro.Size = new System.Drawing.Size(187, 37);
+            this.btnFinalizarRegistro.Size = new System.Drawing.Size(131, 22);
             this.btnFinalizarRegistro.TabIndex = 70;
             this.btnFinalizarRegistro.Text = "Finalizar Registro";
             this.btnFinalizarRegistro.UseVisualStyleBackColor = false;
@@ -150,18 +158,20 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(71, 88);
+            this.label2.Location = new System.Drawing.Point(50, 53);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 32);
+            this.label2.Size = new System.Drawing.Size(68, 21);
             this.label2.TabIndex = 60;
             this.label2.Text = "Nombre";
             // 
             // txbContraseña
             // 
-            this.txbContraseña.Location = new System.Drawing.Point(316, 223);
+            this.txbContraseña.Location = new System.Drawing.Point(221, 134);
+            this.txbContraseña.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txbContraseña.Name = "txbContraseña";
             this.txbContraseña.PlaceholderText = "Ingresa tu contraseña";
-            this.txbContraseña.Size = new System.Drawing.Size(331, 31);
+            this.txbContraseña.Size = new System.Drawing.Size(233, 23);
             this.txbContraseña.TabIndex = 68;
             // 
             // label3
@@ -169,9 +179,10 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(71, 129);
+            this.label3.Location = new System.Drawing.Point(50, 77);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 32);
+            this.label3.Size = new System.Drawing.Size(74, 21);
             this.label3.TabIndex = 61;
             this.label3.Text = "Apellidos";
             // 
@@ -180,37 +191,42 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(74, 18);
+            this.label4.Location = new System.Drawing.Point(52, 11);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(573, 48);
+            this.label4.Size = new System.Drawing.Size(386, 32);
             this.label4.TabIndex = 59;
             this.label4.Text = "bienvenido registrate con nosotros";
             // 
             // txbEmail
             // 
-            this.txbEmail.Location = new System.Drawing.Point(316, 176);
+            this.txbEmail.Location = new System.Drawing.Point(221, 106);
+            this.txbEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txbEmail.Name = "txbEmail";
             this.txbEmail.PlaceholderText = "Ingresa tu Email aqui";
-            this.txbEmail.Size = new System.Drawing.Size(331, 31);
+            this.txbEmail.Size = new System.Drawing.Size(233, 23);
             this.txbEmail.TabIndex = 67;
             this.txbEmail.TextChanged += new System.EventHandler(this.txbEmail_TextChanged);
             // 
             // txbNombre
             // 
-            this.txbNombre.Location = new System.Drawing.Point(316, 91);
+            this.txbNombre.Location = new System.Drawing.Point(221, 55);
+            this.txbNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txbNombre.Name = "txbNombre";
             this.txbNombre.PlaceholderText = "Ingresa tu nombre aqui";
-            this.txbNombre.Size = new System.Drawing.Size(331, 31);
+            this.txbNombre.Size = new System.Drawing.Size(233, 23);
             this.txbNombre.TabIndex = 65;
+            
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(71, 173);
+            this.label5.Location = new System.Drawing.Point(50, 104);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 32);
+            this.label5.Size = new System.Drawing.Size(48, 21);
             this.label5.TabIndex = 62;
             this.label5.Text = "Email";
             // 
@@ -219,18 +235,20 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(71, 265);
+            this.label6.Location = new System.Drawing.Point(50, 159);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(247, 32);
+            this.label6.Size = new System.Drawing.Size(164, 21);
             this.label6.TabIndex = 64;
             this.label6.Text = "Confirmar Contraseña";
             // 
             // txbApellido
             // 
-            this.txbApellido.Location = new System.Drawing.Point(316, 133);
+            this.txbApellido.Location = new System.Drawing.Point(221, 80);
+            this.txbApellido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txbApellido.Name = "txbApellido";
             this.txbApellido.PlaceholderText = "Ingresa tus Apellidos aqui";
-            this.txbApellido.Size = new System.Drawing.Size(331, 31);
+            this.txbApellido.Size = new System.Drawing.Size(233, 23);
             this.txbApellido.TabIndex = 66;
             // 
             // label7
@@ -238,9 +256,10 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(71, 220);
+            this.label7.Location = new System.Drawing.Point(50, 132);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(134, 32);
+            this.label7.Size = new System.Drawing.Size(89, 21);
             this.label7.TabIndex = 63;
             this.label7.Text = "Contraseña";
             // 
@@ -248,9 +267,10 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // 
             this.button2.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.feis;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(798, 436);
+            this.button2.Location = new System.Drawing.Point(559, 262);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(99, 96);
+            this.button2.Size = new System.Drawing.Size(69, 58);
             this.button2.TabIndex = 75;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -259,9 +279,10 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // 
             this.button3.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.wasap;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(987, 436);
+            this.button3.Location = new System.Drawing.Point(691, 262);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(99, 96);
+            this.button3.Size = new System.Drawing.Size(69, 58);
             this.button3.TabIndex = 76;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -269,7 +290,8 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // pictureBox1
             // 
             this.pictureBox1.Image = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.Captura_de_pantalla_2022_05_20_190252;
-            this.pictureBox1.Location = new System.Drawing.Point(798, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(559, 7);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(495, 418);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -281,9 +303,10 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Location = new System.Drawing.Point(1092, 451);
+            this.label1.Location = new System.Drawing.Point(764, 271);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 50);
+            this.label1.Size = new System.Drawing.Size(93, 30);
             this.label1.TabIndex = 4;
             this.label1.Text = "Click Para ver \r\nNuestra Pagina!!";
             // 
@@ -296,20 +319,21 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.lblEmail.AutoSize = true;
             this.lblEmail.BackColor = System.Drawing.Color.Transparent;
             this.lblEmail.ForeColor = System.Drawing.Color.Black;
-            this.lblEmail.Location = new System.Drawing.Point(653, 167);
+            this.lblEmail.Location = new System.Drawing.Point(457, 100);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(133, 25);
+            this.lblEmail.Size = new System.Drawing.Size(88, 15);
             this.lblEmail.TabIndex = 78;
             this.lblEmail.Text = "Email no valido";
             this.lblEmail.Visible = false;
             // 
             // Form_Registro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.fondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1305, 586);
+            this.ClientSize = new System.Drawing.Size(914, 352);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button3);
@@ -334,6 +358,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form_Registro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Registro";
