@@ -17,19 +17,14 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             InitializeComponent();
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            comboBox3.Visible = true;
-            linkLabel1.LinkVisited = true;
-            lblNota.Visible = true;
-        }
+      
 
         private void Form_Configuracion_Load(object sender, EventArgs e)
         {
-            lblNota.Visible = false;
             panel2.Top = 0;
             panel2.Left = this.Width - panel2.Width - 100;
-            comboBox3.Visible = false;
+            comboBox3.Visible = true;
+
         }
 
         private void btnInformacionSoftware_Click(object sender, EventArgs e)
@@ -66,7 +61,20 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            lblNota.Visible = false;
+            DialogResult result = MessageBox.Show("       Nota: \n" +
+                "El indice de rendimiento es una herramienta que permite rastrear la actividad y la oferta y demanda del personal" +
+                "permitiendo recopilar información y asi permite lograr reducir calcular y reducir tiempos de espera y de servicio." +
+                "no es 100 % cualitativo.los iconos de personajes cambiarán de acuerdo con su ocupación verde(óptima)," +
+                "no hay saturación depersonal ni de pedidos amarillo(aceptable), la tasa de llegada y de servicio es aceptable" +
+                "rojo(saturado), la tasa de llegada y servicio es muy excesiva, se recomienda tomar medidas para tratar esta saturación" +
+                "¿Deseas Desactivar esta función" +
+                "", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                //aqui desactivas las imagenes
+                comboBox3.Text = "Desactivado";
+            }
+ 
         }
 
         private void rbDesactivado_CheckedChanged(object sender, EventArgs e)
@@ -83,7 +91,6 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             if (rbActivado.Checked == true)
             {
                 txbImpuesto.Enabled = true;
-
 
             }
         }

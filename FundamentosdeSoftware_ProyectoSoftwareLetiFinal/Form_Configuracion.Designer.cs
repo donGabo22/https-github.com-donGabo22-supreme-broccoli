@@ -30,7 +30,6 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Configuracion));
-            this.lblNota = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txbImpuesto = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -65,16 +64,6 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbflechaSalir)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblNota
-            // 
-            this.lblNota.AutoSize = true;
-            this.lblNota.BackColor = System.Drawing.Color.Transparent;
-            this.lblNota.Location = new System.Drawing.Point(9, 656);
-            this.lblNota.Name = "lblNota";
-            this.lblNota.Size = new System.Drawing.Size(939, 200);
-            this.lblNota.TabIndex = 83;
-            this.lblNota.Text = resources.GetString("lblNota.Text");
             // 
             // label5
             // 
@@ -311,7 +300,6 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.linkLabel1.TabIndex = 85;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "¿Activar o desactivar Modo de Inidice de Rendimiento?";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // comboBox3
             // 
@@ -319,7 +307,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.comboBox3.Items.AddRange(new object[] {
             "Activado",
             "Desactivado"});
-            this.comboBox3.Location = new System.Drawing.Point(679, 823);
+            this.comboBox3.Location = new System.Drawing.Point(12, 645);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(240, 33);
             this.comboBox3.TabIndex = 86;
@@ -371,7 +359,6 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.Configuración);
-            this.Controls.Add(this.lblNota);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txbImpuesto);
             this.Controls.Add(this.pictureBox5);
@@ -407,8 +394,6 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblNota;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txbImpuesto;
         private System.Windows.Forms.PictureBox pictureBox5;

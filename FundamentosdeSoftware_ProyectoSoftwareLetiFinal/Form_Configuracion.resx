@@ -57,16 +57,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lblNota.Text" xml:space="preserve">
-    <value>Nota:
-El indice de rendimiento es una herramienta que permite rastrear la actividad y la oferta y demanda del personal 
-permitiendo recopilar información y asi permite lograr reducir calcular y reducir tiempos de espera y de servicio. 
-no es 100% cualitativo.los iconos de personajes cambiarán de acuerdo con su ocupación verde(óptima),
-no hay saturación depersonal ni de pedidos amarillo(aceptable), la tasa de llegada y de servicio es aceptable
-rojo(saturado), la tasa de llegada y servicio es muy excesiva, se recomienda tomar medidas para tratar esta saturación
-
-activarlo o desactivarlo depende de el control que se quiera ejercer en el personal </value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

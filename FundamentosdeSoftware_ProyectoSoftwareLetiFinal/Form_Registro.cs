@@ -66,8 +66,10 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             }
             if (bandera==false)
             {
-          
-                MessageBox.Show("correo invalido","",MessageBoxButtons.OK,MessageBoxIcon.Error);
+
+                pbcorrecto.Visible = false;
+                pberror.Visible = false;
+                MessageBox.Show("correo invalido","ERROR",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
             {
                
@@ -77,6 +79,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 
         private void txbConfirmar_TextChanged(object sender, EventArgs e)
         {
+            label8.Visible = true;
             txbConfirmar.Text = txbConfirmar.Text;
             if (txbConfirmar.Text == txbContraseña.Text)
             {
@@ -161,6 +164,9 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             Process.Start(new ProcessStartInfo("https://www.instagram.com") { UseShellExecute = true });
         }
 
-      
+        private void pbflechaSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

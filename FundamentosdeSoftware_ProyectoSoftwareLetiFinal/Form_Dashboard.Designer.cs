@@ -32,18 +32,19 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Dashboard));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pbflechaSalir = new System.Windows.Forms.PictureBox();
+            this.lblusuario = new System.Windows.Forms.Label();
+            this.pbFoto = new System.Windows.Forms.PictureBox();
             this.btnRol = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
-            this.BtnCaja = new System.Windows.Forms.Button();
-            this.btnConfiguracion = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnConfiguracion = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.BtnCaja = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblusuario = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
-            this.pbFoto = new System.Windows.Forms.PictureBox();
             this.lblFecha = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -51,38 +52,94 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.label6 = new System.Windows.Forms.Label();
             this.horaYfecha = new System.Windows.Forms.Timer(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.Pastel1 = new System.Windows.Forms.Label();
+            this.pastel2 = new System.Windows.Forms.Label();
+            this.pastel6 = new System.Windows.Forms.Label();
+            this.pastel3 = new System.Windows.Forms.Label();
+            this.pastel4 = new System.Windows.Forms.Label();
+            this.pastel5 = new System.Windows.Forms.Label();
+            this.pastel7 = new System.Windows.Forms.Label();
+            this.pastel8 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbflechaSalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.lblusuario);
+            this.panel2.Controls.Add(this.pbFoto);
             this.panel2.Controls.Add(this.btnRol);
             this.panel2.Controls.Add(this.btnMenu);
-            this.panel2.Controls.Add(this.BtnCaja);
-            this.panel2.Controls.Add(this.btnConfiguracion);
             this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.btnConfiguracion);
             this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.BtnCaja);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 90);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(128, 441);
+            this.panel2.Size = new System.Drawing.Size(153, 972);
             this.panel2.TabIndex = 22;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.pbflechaSalir);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 923);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(153, 49);
+            this.panel1.TabIndex = 89;
+            // 
+            // pbflechaSalir
+            // 
+            this.pbflechaSalir.BackColor = System.Drawing.Color.Transparent;
+            this.pbflechaSalir.Image = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.flecha;
+            this.pbflechaSalir.Location = new System.Drawing.Point(0, 0);
+            this.pbflechaSalir.Name = "pbflechaSalir";
+            this.pbflechaSalir.Size = new System.Drawing.Size(52, 49);
+            this.pbflechaSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbflechaSalir.TabIndex = 57;
+            this.pbflechaSalir.TabStop = false;
+            // 
+            // lblusuario
+            // 
+            this.lblusuario.AutoSize = true;
+            this.lblusuario.BackColor = System.Drawing.Color.Transparent;
+            this.lblusuario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblusuario.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.lblusuario.Location = new System.Drawing.Point(0, 139);
+            this.lblusuario.Name = "lblusuario";
+            this.lblusuario.Size = new System.Drawing.Size(149, 64);
+            this.lblusuario.TabIndex = 23;
+            this.lblusuario.Text = "bienvenido \r\n@usuario";
+            // 
+            // pbFoto
+            // 
+            this.pbFoto.Image = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.Captura_de_pantalla_2022_05_20_190252;
+            this.pbFoto.Location = new System.Drawing.Point(0, 3);
+            this.pbFoto.Name = "pbFoto";
+            this.pbFoto.Size = new System.Drawing.Size(150, 133);
+            this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbFoto.TabIndex = 0;
+            this.pbFoto.TabStop = false;
+            this.pbFoto.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnRol
             // 
             this.btnRol.BackColor = System.Drawing.Color.LightCoral;
             this.btnRol.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.usuario;
             this.btnRol.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRol.Location = new System.Drawing.Point(2, 58);
-            this.btnRol.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRol.Location = new System.Drawing.Point(3, 206);
             this.btnRol.Name = "btnRol";
-            this.btnRol.Size = new System.Drawing.Size(78, 69);
+            this.btnRol.Size = new System.Drawing.Size(111, 115);
             this.btnRol.TabIndex = 2;
             this.btnRol.UseVisualStyleBackColor = false;
             this.btnRol.Click += new System.EventHandler(this.btnRol_Click);
@@ -92,135 +149,91 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.btnMenu.BackColor = System.Drawing.Color.Orange;
             this.btnMenu.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.menu;
             this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMenu.Location = new System.Drawing.Point(2, 175);
-            this.btnMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMenu.Location = new System.Drawing.Point(3, 410);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(78, 69);
+            this.btnMenu.Size = new System.Drawing.Size(111, 115);
             this.btnMenu.TabIndex = 3;
             this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
-            // BtnCaja
+            // label2
             // 
-            this.BtnCaja.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.BtnCaja.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.caja;
-            this.BtnCaja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnCaja.Location = new System.Drawing.Point(0, 286);
-            this.BtnCaja.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnCaja.Name = "BtnCaja";
-            this.BtnCaja.Size = new System.Drawing.Size(78, 69);
-            this.BtnCaja.TabIndex = 4;
-            this.BtnCaja.UseVisualStyleBackColor = false;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(2, 320);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(148, 75);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "AGREGAR/\r\nCONFIGURAR/\r\nELIMINAR ROLES\r\n";
             // 
             // btnConfiguracion
             // 
             this.btnConfiguracion.BackColor = System.Drawing.Color.BlueViolet;
             this.btnConfiguracion.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.configuracion4;
             this.btnConfiguracion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnConfiguracion.Location = new System.Drawing.Point(2, 388);
-            this.btnConfiguracion.Margin = new System.Windows.Forms.Padding(2);
+            this.btnConfiguracion.Location = new System.Drawing.Point(3, 772);
             this.btnConfiguracion.Name = "btnConfiguracion";
-            this.btnConfiguracion.Size = new System.Drawing.Size(78, 69);
+            this.btnConfiguracion.Size = new System.Drawing.Size(111, 115);
             this.btnConfiguracion.TabIndex = 5;
             this.btnConfiguracion.UseVisualStyleBackColor = false;
             this.btnConfiguracion.Click += new System.EventHandler(this.btnConfiguracion_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(0, 128);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 45);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "AGREGAR/\r\nCONFIGURAR/\r\nELIMINAR ROLES\r\n";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(0, 461);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(3, 890);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 15);
+            this.label5.Size = new System.Drawing.Size(154, 25);
             this.label5.TabIndex = 10;
             this.label5.Text = "CONFIGURACIÓN\r\n";
+            // 
+            // BtnCaja
+            // 
+            this.BtnCaja.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.BtnCaja.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.caja;
+            this.BtnCaja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnCaja.Location = new System.Drawing.Point(3, 585);
+            this.BtnCaja.Name = "BtnCaja";
+            this.BtnCaja.Size = new System.Drawing.Size(111, 115);
+            this.BtnCaja.TabIndex = 4;
+            this.BtnCaja.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(2, 249);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(2, 528);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 30);
+            this.label3.Size = new System.Drawing.Size(125, 50);
             this.label3.TabIndex = 8;
             this.label3.Text = "AGREGAR/\r\nEDITAR MENU";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(2, 356);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(3, 703);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 30);
+            this.label4.Size = new System.Drawing.Size(139, 50);
             this.label4.TabIndex = 9;
             this.label4.Text = "CONSULTAR/\r\nCORTE DE CAJA\r\n";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel1.Controls.Add(this.lblusuario);
-            this.panel1.Controls.Add(this.lblHora);
-            this.panel1.Controls.Add(this.pbFoto);
-            this.panel1.Controls.Add(this.lblFecha);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(685, 90);
-            this.panel1.TabIndex = 21;
-            // 
-            // lblusuario
-            // 
-            this.lblusuario.AutoSize = true;
-            this.lblusuario.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblusuario.Location = new System.Drawing.Point(0, 73);
-            this.lblusuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblusuario.Name = "lblusuario";
-            this.lblusuario.Size = new System.Drawing.Size(119, 15);
-            this.lblusuario.TabIndex = 23;
-            this.lblusuario.Text = "bienvenido @usuario";
             // 
             // lblHora
             // 
             this.lblHora.AutoSize = true;
-            this.lblHora.BackColor = System.Drawing.Color.Transparent;
+            this.lblHora.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lblHora.Font = new System.Drawing.Font("Segoe UI", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblHora.Location = new System.Drawing.Point(351, 46);
-            this.lblHora.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHora.Location = new System.Drawing.Point(639, 43);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(121, 51);
+            this.lblHora.Size = new System.Drawing.Size(180, 74);
             this.lblHora.TabIndex = 1;
             this.lblHora.Text = "label3";
             this.lblHora.Click += new System.EventHandler(this.lblHora_Click);
             // 
-            // pbFoto
-            // 
-            this.pbFoto.Image = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.usuario;
-            this.pbFoto.Location = new System.Drawing.Point(0, 2);
-            this.pbFoto.Margin = new System.Windows.Forms.Padding(2);
-            this.pbFoto.Name = "pbFoto";
-            this.pbFoto.Size = new System.Drawing.Size(105, 80);
-            this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbFoto.TabIndex = 0;
-            this.pbFoto.TabStop = false;
-            this.pbFoto.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Location = new System.Drawing.Point(351, 31);
-            this.lblFecha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFecha.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.lblFecha.Location = new System.Drawing.Point(639, 18);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(38, 15);
+            this.lblFecha.Size = new System.Drawing.Size(59, 25);
             this.lblFecha.TabIndex = 0;
             this.lblFecha.Text = "label2";
             this.lblFecha.Click += new System.EventHandler(this.lblFecha_Click);
@@ -228,10 +241,9 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(323, 375);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(461, 625);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(120, 30);
+            this.label9.Size = new System.Drawing.Size(185, 50);
             this.label9.TabIndex = 20;
             this.label9.Text = "EVENTO ACTIVDADO:\r\nTACOS 2X1\r\n";
             // 
@@ -239,30 +251,27 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(323, 315);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(461, 525);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(181, 51);
+            this.label8.Size = new System.Drawing.Size(264, 74);
             this.label8.TabIndex = 19;
             this.label8.Text = "NUMERO";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(323, 300);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(461, 500);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(111, 15);
+            this.label7.Size = new System.Drawing.Size(173, 25);
             this.label7.TabIndex = 18;
             this.label7.Text = "MESAS ATENDIDAS:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(323, 222);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(461, 370);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(143, 15);
+            this.label6.Size = new System.Drawing.Size(220, 25);
             this.label6.TabIndex = 17;
             this.label6.Text = "INDICE DE RENDIMIENTO:";
             // 
@@ -276,19 +285,122 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Filter = "Imagen |*.jpg|Todos los Archivos|*.*";
             // 
+            // Pastel1
+            // 
+            this.Pastel1.AutoSize = true;
+            this.Pastel1.Location = new System.Drawing.Point(898, 712);
+            this.Pastel1.Name = "Pastel1";
+            this.Pastel1.Size = new System.Drawing.Size(59, 25);
+            this.Pastel1.TabIndex = 23;
+            this.Pastel1.Text = "label1";
+            this.Pastel1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // pastel2
+            // 
+            this.pastel2.AutoSize = true;
+            this.pastel2.Location = new System.Drawing.Point(898, 737);
+            this.pastel2.Name = "pastel2";
+            this.pastel2.Size = new System.Drawing.Size(69, 25);
+            this.pastel2.TabIndex = 24;
+            this.pastel2.Text = "label10";
+            this.pastel2.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // pastel6
+            // 
+            this.pastel6.AutoSize = true;
+            this.pastel6.Location = new System.Drawing.Point(898, 850);
+            this.pastel6.Name = "pastel6";
+            this.pastel6.Size = new System.Drawing.Size(69, 25);
+            this.pastel6.TabIndex = 25;
+            this.pastel6.Text = "label11";
+            this.pastel6.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // pastel3
+            // 
+            this.pastel3.AutoSize = true;
+            this.pastel3.Location = new System.Drawing.Point(898, 762);
+            this.pastel3.Name = "pastel3";
+            this.pastel3.Size = new System.Drawing.Size(69, 25);
+            this.pastel3.TabIndex = 26;
+            this.pastel3.Text = "label12";
+            this.pastel3.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // pastel4
+            // 
+            this.pastel4.AutoSize = true;
+            this.pastel4.Location = new System.Drawing.Point(898, 787);
+            this.pastel4.Name = "pastel4";
+            this.pastel4.Size = new System.Drawing.Size(69, 25);
+            this.pastel4.TabIndex = 27;
+            this.pastel4.Text = "label13";
+            this.pastel4.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // pastel5
+            // 
+            this.pastel5.AutoSize = true;
+            this.pastel5.Location = new System.Drawing.Point(898, 816);
+            this.pastel5.Name = "pastel5";
+            this.pastel5.Size = new System.Drawing.Size(69, 25);
+            this.pastel5.TabIndex = 28;
+            this.pastel5.Text = "label13";
+            this.pastel5.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // pastel7
+            // 
+            this.pastel7.AutoSize = true;
+            this.pastel7.Location = new System.Drawing.Point(898, 879);
+            this.pastel7.Name = "pastel7";
+            this.pastel7.Size = new System.Drawing.Size(69, 25);
+            this.pastel7.TabIndex = 29;
+            this.pastel7.Text = "label13";
+            this.pastel7.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // pastel8
+            // 
+            this.pastel8.AutoSize = true;
+            this.pastel8.Location = new System.Drawing.Point(898, 904);
+            this.pastel8.Name = "pastel8";
+            this.pastel8.Size = new System.Drawing.Size(69, 25);
+            this.pastel8.TabIndex = 30;
+            this.pastel8.Text = "label13";
+            this.pastel8.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(673, 139);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(484, 54);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "Productos mas vendidos";
+            // 
             // Form_Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(685, 531);
+            this.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.fondo;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(979, 972);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblHora);
+            this.Controls.Add(this.pastel8);
+            this.Controls.Add(this.pastel7);
+            this.Controls.Add(this.lblFecha);
+            this.Controls.Add(this.pastel5);
+            this.Controls.Add(this.pastel4);
+            this.Controls.Add(this.pastel3);
+            this.Controls.Add(this.pastel6);
+            this.Controls.Add(this.pastel2);
+            this.Controls.Add(this.Pastel1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Dashboard";
@@ -297,7 +409,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbflechaSalir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -315,7 +427,6 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.PictureBox pbFoto;
         private System.Windows.Forms.Label lblFecha;
@@ -326,5 +437,16 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         private System.Windows.Forms.Timer horaYfecha;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label lblusuario;
+        private System.Windows.Forms.Label Pastel1;
+        private System.Windows.Forms.Label pastel2;
+        private System.Windows.Forms.Label pastel6;
+        private System.Windows.Forms.Label pastel3;
+        private System.Windows.Forms.Label pastel4;
+        private System.Windows.Forms.Label pastel5;
+        private System.Windows.Forms.Label pastel7;
+        private System.Windows.Forms.Label pastel8;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pbflechaSalir;
     }
 }

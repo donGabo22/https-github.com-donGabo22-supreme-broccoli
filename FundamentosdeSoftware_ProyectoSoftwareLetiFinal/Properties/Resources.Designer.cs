@@ -73,6 +73,16 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cajebrios {
+            get {
+                object obj = ResourceManager.GetObject("cajebrios", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap canario {
             get {
                 object obj = ResourceManager.GetObject("canario", resourceCulture);
@@ -86,6 +96,16 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties {
         internal static System.Drawing.Bitmap Captura_de_pantalla_2022_05_20_190252 {
             get {
                 object obj = ResourceManager.GetObject("Captura de pantalla 2022-05-20 190252", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cocinebrios {
+            get {
+                object obj = ResourceManager.GetObject("cocinebrios", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,6 +153,16 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fondo2 {
+            get {
+                object obj = ResourceManager.GetObject("fondo2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap imagen {
             get {
                 object obj = ResourceManager.GetObject("imagen", resourceCulture);
@@ -166,6 +196,16 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties {
         internal static System.Drawing.Bitmap menu {
             get {
                 object obj = ResourceManager.GetObject("menu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mesebrios {
+            get {
+                object obj = ResourceManager.GetObject("mesebrios", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

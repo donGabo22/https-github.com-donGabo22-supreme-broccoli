@@ -62,8 +62,25 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 
             private void Form_InicializandoInstalación_Load(object sender, EventArgs e)
         {
-            progreso.Enabled = true;
             pbProgreso.Value = 0;
+        }
+
+        private void BtnAdmin_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Querry Sotware Sigue en constante desarrollo por lo que algunas funcionalidades pueden verse limitadas, ¿Esta seguro que desea inicializar el modo Administrador? ", "QUERRY SOFTWARE", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                progreso.Enabled = true;
+                lblComentario.Visible = true;
+            }
+
+        }
+
+        private void BtnMesero_Click(object sender, EventArgs e)
+        {
+            Movil_Mesero_Inicio mr = new Movil_Mesero_Inicio();
+            this.Hide();
+            mr.Show();
         }
     }
 }
