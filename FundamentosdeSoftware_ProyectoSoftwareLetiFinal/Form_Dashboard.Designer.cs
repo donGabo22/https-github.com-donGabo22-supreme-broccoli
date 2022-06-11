@@ -46,10 +46,8 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.label4 = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.horaYfecha = new System.Windows.Forms.Timer(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.Pastel1 = new System.Windows.Forms.Label();
@@ -61,6 +59,10 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.pastel7 = new System.Windows.Forms.Label();
             this.pastel8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbflechaSalir)).BeginInit();
@@ -69,7 +71,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.lblusuario);
@@ -108,13 +110,14 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.pbflechaSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbflechaSalir.TabIndex = 57;
             this.pbflechaSalir.TabStop = false;
+            this.pbflechaSalir.Click += new System.EventHandler(this.pbflechaSalir_Click);
             // 
             // lblusuario
             // 
             this.lblusuario.AutoSize = true;
             this.lblusuario.BackColor = System.Drawing.Color.Transparent;
             this.lblusuario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblusuario.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.lblusuario.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lblusuario.Location = new System.Drawing.Point(0, 139);
             this.lblusuario.Name = "lblusuario";
             this.lblusuario.Size = new System.Drawing.Size(149, 64);
@@ -218,7 +221,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // lblHora
             // 
             this.lblHora.AutoSize = true;
-            this.lblHora.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.lblHora.BackColor = System.Drawing.SystemColors.Control;
             this.lblHora.Font = new System.Drawing.Font("Segoe UI", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblHora.Location = new System.Drawing.Point(639, 43);
             this.lblHora.Name = "lblHora";
@@ -230,50 +233,32 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.lblFecha.Location = new System.Drawing.Point(639, 18);
+            this.lblFecha.BackColor = System.Drawing.SystemColors.Control;
+            this.lblFecha.Location = new System.Drawing.Point(633, 18);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(59, 25);
             this.lblFecha.TabIndex = 0;
             this.lblFecha.Text = "label2";
             this.lblFecha.Click += new System.EventHandler(this.lblFecha_Click);
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(461, 625);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(185, 50);
-            this.label9.TabIndex = 20;
-            this.label9.Text = "EVENTO ACTIVDADO:\r\nTACOS 2X1\r\n";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(461, 525);
+            this.label8.Location = new System.Drawing.Point(461, 637);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(264, 74);
+            this.label8.Size = new System.Drawing.Size(92, 74);
             this.label8.TabIndex = 19;
-            this.label8.Text = "NUMERO";
+            this.label8.Text = "38";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(461, 500);
+            this.label7.Location = new System.Drawing.Point(461, 612);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(173, 25);
             this.label7.TabIndex = 18;
             this.label7.Text = "MESAS ATENDIDAS:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(461, 370);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(220, 25);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "INDICE DE RENDIMIENTO:";
             // 
             // horaYfecha
             // 
@@ -288,9 +273,11 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // Pastel1
             // 
             this.Pastel1.AutoSize = true;
-            this.Pastel1.Location = new System.Drawing.Point(898, 712);
+            this.Pastel1.BackColor = System.Drawing.SystemColors.Control;
+            this.Pastel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Pastel1.Location = new System.Drawing.Point(1550, 697);
             this.Pastel1.Name = "Pastel1";
-            this.Pastel1.Size = new System.Drawing.Size(59, 25);
+            this.Pastel1.Size = new System.Drawing.Size(78, 32);
             this.Pastel1.TabIndex = 23;
             this.Pastel1.Text = "label1";
             this.Pastel1.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -298,9 +285,11 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // pastel2
             // 
             this.pastel2.AutoSize = true;
-            this.pastel2.Location = new System.Drawing.Point(898, 737);
+            this.pastel2.BackColor = System.Drawing.SystemColors.Control;
+            this.pastel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pastel2.Location = new System.Drawing.Point(1550, 729);
             this.pastel2.Name = "pastel2";
-            this.pastel2.Size = new System.Drawing.Size(69, 25);
+            this.pastel2.Size = new System.Drawing.Size(91, 32);
             this.pastel2.TabIndex = 24;
             this.pastel2.Text = "label10";
             this.pastel2.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -308,9 +297,11 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // pastel6
             // 
             this.pastel6.AutoSize = true;
-            this.pastel6.Location = new System.Drawing.Point(898, 850);
+            this.pastel6.BackColor = System.Drawing.SystemColors.Control;
+            this.pastel6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pastel6.Location = new System.Drawing.Point(1550, 856);
             this.pastel6.Name = "pastel6";
-            this.pastel6.Size = new System.Drawing.Size(69, 25);
+            this.pastel6.Size = new System.Drawing.Size(91, 32);
             this.pastel6.TabIndex = 25;
             this.pastel6.Text = "label11";
             this.pastel6.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -318,9 +309,11 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // pastel3
             // 
             this.pastel3.AutoSize = true;
-            this.pastel3.Location = new System.Drawing.Point(898, 762);
+            this.pastel3.BackColor = System.Drawing.SystemColors.Control;
+            this.pastel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pastel3.Location = new System.Drawing.Point(1550, 761);
             this.pastel3.Name = "pastel3";
-            this.pastel3.Size = new System.Drawing.Size(69, 25);
+            this.pastel3.Size = new System.Drawing.Size(91, 32);
             this.pastel3.TabIndex = 26;
             this.pastel3.Text = "label12";
             this.pastel3.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -328,9 +321,11 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // pastel4
             // 
             this.pastel4.AutoSize = true;
-            this.pastel4.Location = new System.Drawing.Point(898, 787);
+            this.pastel4.BackColor = System.Drawing.SystemColors.Control;
+            this.pastel4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pastel4.Location = new System.Drawing.Point(1550, 792);
             this.pastel4.Name = "pastel4";
-            this.pastel4.Size = new System.Drawing.Size(69, 25);
+            this.pastel4.Size = new System.Drawing.Size(91, 32);
             this.pastel4.TabIndex = 27;
             this.pastel4.Text = "label13";
             this.pastel4.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -338,9 +333,11 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // pastel5
             // 
             this.pastel5.AutoSize = true;
-            this.pastel5.Location = new System.Drawing.Point(898, 816);
+            this.pastel5.BackColor = System.Drawing.SystemColors.Control;
+            this.pastel5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pastel5.Location = new System.Drawing.Point(1550, 824);
             this.pastel5.Name = "pastel5";
-            this.pastel5.Size = new System.Drawing.Size(69, 25);
+            this.pastel5.Size = new System.Drawing.Size(91, 32);
             this.pastel5.TabIndex = 28;
             this.pastel5.Text = "label13";
             this.pastel5.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -348,9 +345,11 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // pastel7
             // 
             this.pastel7.AutoSize = true;
-            this.pastel7.Location = new System.Drawing.Point(898, 879);
+            this.pastel7.BackColor = System.Drawing.SystemColors.Control;
+            this.pastel7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pastel7.Location = new System.Drawing.Point(1550, 888);
             this.pastel7.Name = "pastel7";
-            this.pastel7.Size = new System.Drawing.Size(69, 25);
+            this.pastel7.Size = new System.Drawing.Size(91, 32);
             this.pastel7.TabIndex = 29;
             this.pastel7.Text = "label13";
             this.pastel7.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -358,9 +357,11 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // pastel8
             // 
             this.pastel8.AutoSize = true;
-            this.pastel8.Location = new System.Drawing.Point(898, 904);
+            this.pastel8.BackColor = System.Drawing.SystemColors.Control;
+            this.pastel8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pastel8.Location = new System.Drawing.Point(1550, 920);
             this.pastel8.Name = "pastel8";
-            this.pastel8.Size = new System.Drawing.Size(69, 25);
+            this.pastel8.Size = new System.Drawing.Size(91, 32);
             this.pastel8.TabIndex = 30;
             this.pastel8.Text = "label13";
             this.pastel8.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -371,11 +372,56 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(673, 139);
+            this.label1.Location = new System.Drawing.Point(674, 117);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(484, 54);
             this.label1.TabIndex = 24;
             this.label1.Text = "Productos mas vendidos";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Green;
+            this.button1.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.caja_registradora;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(461, 398);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 115);
+            this.button1.TabIndex = 90;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.chefsito;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Location = new System.Drawing.Point(570, 398);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(111, 115);
+            this.button2.TabIndex = 91;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Red;
+            this.button3.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.meseroo;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Location = new System.Drawing.Point(674, 398);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(111, 115);
+            this.button3.TabIndex = 92;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(461, 341);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(447, 54);
+            this.label10.TabIndex = 93;
+            this.label10.Text = "Indice de Rendimiento";
             // 
             // Form_Dashboard
             // 
@@ -383,7 +429,11 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.fondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(979, 972);
+            this.ClientSize = new System.Drawing.Size(1578, 972);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblHora);
             this.Controls.Add(this.pastel8);
@@ -396,10 +446,8 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.Controls.Add(this.pastel2);
             this.Controls.Add(this.Pastel1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -433,7 +481,6 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Timer horaYfecha;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label lblusuario;
@@ -448,5 +495,9 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pbflechaSalir;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label10;
     }
 }

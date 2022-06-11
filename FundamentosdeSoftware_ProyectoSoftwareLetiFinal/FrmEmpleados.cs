@@ -244,5 +244,9 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             }
         }
 
+        private void pbflechaSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

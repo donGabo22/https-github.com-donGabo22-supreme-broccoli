@@ -41,33 +41,29 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         {
             label1.Left = this.Width - label1.Left + 50;
 
-            Pastel1.Left = this.Width - Pastel1.Left;
-            //   Pastel1.Top = 900;
+            ////Pastel1.Left = 1600;
+            ////pastel2.Left = 1600;
+            ////pastel3.Left = 1600;
+            ////pastel4.Left = 1600;
+            ////pastel5.Left = 1600;
+            ////pastel6.Left = 1600;
+            ////pastel7.Left = 1600;
+            ////pastel8.Left = 1600;
 
-            pastel2.Left = this.Width - pastel2.Left;
-            //   pastel2.Top = 1000;
 
-            pastel3.Left = this.Width - pastel3.Left;
-            //   pastel3.Top = 1030;
 
-            pastel4.Left = this.Width - pastel4.Left;
-            //  pastel4.Top = 1060;
 
-            pastel5.Left = this.Width - pastel5.Left;
-           //pastel5.Top = 1090;
 
-            pastel6.Left = this.Width - pastel6.Left;
-            //pastel6.top = 1129;
 
-            pastel7.Left = this.Width - pastel7.Left;
-           // pastel7.Top = 1150;
 
-            pastel8.Left = this.Width-pastel8.Left;
-            //pastel8.Top = 1180;
+
+
+
+
 
 
             lblHora.Left = this.Width - lblHora.Left;
-            lblFecha.Left = this.Width - lblFecha.Left + 10;
+            lblFecha.Left = this.Width - lblFecha.Left -6;
             lona = CreateGraphics();
             pluma = new Pen(Color.Black);
             num = new Random();
@@ -87,7 +83,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
                 porcentaje[j] = (numeros[j] / x) * 100;
                 grados[j] = (numeros[j] / x) * 360;
                 brocha.Color = Color.FromArgb(num.Next(255), num.Next(255), num.Next(255));
-                lona.FillPie(brocha, this.Width-550, 200,      500, 500, grados_acum, grados[j]);
+                lona.FillPie(brocha, this.Width-550, 200,      450, 450, grados_acum, grados[j]);
                 grados_acum = grados_acum + grados[j];
                 if (j == 0) { Pastel1.ForeColor = brocha.Color; }
                 if (j == 1) { pastel2.ForeColor = brocha.Color; }
@@ -174,6 +170,17 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             FormMenu frmM = new FormMenu();
             this.Hide();
             frmM.Show();
+        }
+
+        private void pbflechaSalir_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Seguro desea salir?", "Log out", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+                Form_Login frmLogin = new Form_Login();
+                frmLogin.Show();
+            }
         }
     }
 

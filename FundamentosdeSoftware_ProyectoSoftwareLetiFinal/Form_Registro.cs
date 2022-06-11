@@ -166,7 +166,9 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 
         private void pbflechaSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            Form_Login frml = new Form_Login();
+            frml.Show();
         }
     }
 }

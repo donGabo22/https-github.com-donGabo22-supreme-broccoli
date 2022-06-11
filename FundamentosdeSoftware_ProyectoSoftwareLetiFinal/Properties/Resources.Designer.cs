@@ -73,6 +73,16 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap caja_registradora {
+            get {
+                object obj = ResourceManager.GetObject("caja registradora", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cajebrios {
             get {
                 object obj = ResourceManager.GetObject("cajebrios", resourceCulture);
@@ -96,6 +106,16 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties {
         internal static System.Drawing.Bitmap Captura_de_pantalla_2022_05_20_190252 {
             get {
                 object obj = ResourceManager.GetObject("Captura de pantalla 2022-05-20 190252", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap chefsito {
+            get {
+                object obj = ResourceManager.GetObject("chefsito", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -206,6 +226,26 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties {
         internal static System.Drawing.Bitmap mesebrios {
             get {
                 object obj = ResourceManager.GetObject("mesebrios", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap meseroicono {
+            get {
+                object obj = ResourceManager.GetObject("meseroicono", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap meseroo {
+            get {
+                object obj = ResourceManager.GetObject("meseroo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

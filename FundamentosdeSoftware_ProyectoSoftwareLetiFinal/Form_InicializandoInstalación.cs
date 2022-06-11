@@ -67,12 +67,14 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 
         private void BtnAdmin_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Querry Sotware Sigue en constante desarrollo por lo que algunas funcionalidades pueden verse limitadas, ¿Esta seguro que desea inicializar el modo Administrador? ", "QUERRY SOFTWARE", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (result == DialogResult.Yes)
-            {
-                progreso.Enabled = true;
-                lblComentario.Visible = true;
-            }
+            //DialogResult result = MessageBox.Show("Querry Sotware Sigue en constante desarrollo por lo que algunas funcionalidades pueden verse limitadas, ¿Esta seguro que desea inicializar el modo Administrador? ", "QUERRY SOFTWARE", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            //if (result == DialogResult.Yes)
+            //{
+            //    progreso.Enabled = true;
+            //    lblComentario.Visible = true;
+            //}
+            FormMenu frmm = new FormMenu();
+            frmm.Show();
 
         }
 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEmpleados));
             this.chBxSabado = new System.Windows.Forms.CheckBox();
             this.chBxLunes = new System.Windows.Forms.CheckBox();
             this.MCalendario = new System.Windows.Forms.MonthCalendar();
@@ -59,8 +60,13 @@
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LblRFC = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pbflechaSalir = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbflechaSalir)).BeginInit();
             this.SuspendLayout();
             // 
             // chBxSabado
@@ -68,9 +74,10 @@
             this.chBxSabado.AutoSize = true;
             this.chBxSabado.BackColor = System.Drawing.Color.Transparent;
             this.chBxSabado.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.chBxSabado.Location = new System.Drawing.Point(777, 211);
+            this.chBxSabado.Location = new System.Drawing.Point(1110, 352);
+            this.chBxSabado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chBxSabado.Name = "chBxSabado";
-            this.chBxSabado.Size = new System.Drawing.Size(250, 21);
+            this.chBxSabado.Size = new System.Drawing.Size(384, 32);
             this.chBxSabado.TabIndex = 74;
             this.chBxSabado.Text = "Sabado-Domingo 9:00am a 11:00pm";
             this.chBxSabado.UseVisualStyleBackColor = false;
@@ -80,16 +87,18 @@
             this.chBxLunes.AutoSize = true;
             this.chBxLunes.BackColor = System.Drawing.Color.Transparent;
             this.chBxLunes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.chBxLunes.Location = new System.Drawing.Point(777, 186);
+            this.chBxLunes.Location = new System.Drawing.Point(1110, 310);
+            this.chBxLunes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chBxLunes.Name = "chBxLunes";
-            this.chBxLunes.Size = new System.Drawing.Size(222, 21);
+            this.chBxLunes.Size = new System.Drawing.Size(340, 32);
             this.chBxLunes.TabIndex = 73;
             this.chBxLunes.Text = "Lunes-Viernes 9:00pm a 1:00am";
             this.chBxLunes.UseVisualStyleBackColor = false;
             // 
             // MCalendario
             // 
-            this.MCalendario.Location = new System.Drawing.Point(777, 2);
+            this.MCalendario.Location = new System.Drawing.Point(1110, 3);
+            this.MCalendario.Margin = new System.Windows.Forms.Padding(13, 15, 13, 15);
             this.MCalendario.Name = "MCalendario";
             this.MCalendario.TabIndex = 72;
             // 
@@ -98,9 +107,10 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(777, 166);
+            this.label10.Location = new System.Drawing.Point(1110, 277);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(172, 17);
+            this.label10.Size = new System.Drawing.Size(262, 28);
             this.label10.TabIndex = 71;
             this.label10.Text = "Horarios y dias de trabajo:";
             // 
@@ -111,9 +121,10 @@
             "$ 1500 (Mil quinientos pesos MXN)",
             "$ 2000 (Dos mil pesos MXN)",
             "$2500 (Dos mil quinientos pesos MXN)"});
-            this.cbxSalario.Location = new System.Drawing.Point(122, 169);
+            this.cbxSalario.Location = new System.Drawing.Point(174, 282);
+            this.cbxSalario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbxSalario.Name = "cbxSalario";
-            this.cbxSalario.Size = new System.Drawing.Size(121, 23);
+            this.cbxSalario.Size = new System.Drawing.Size(171, 33);
             this.cbxSalario.TabIndex = 70;
             this.cbxSalario.Text = "Salario:";
             // 
@@ -122,9 +133,10 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(4, 173);
+            this.label9.Location = new System.Drawing.Point(6, 288);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(54, 17);
+            this.label9.Size = new System.Drawing.Size(82, 28);
             this.label9.TabIndex = 69;
             this.label9.Text = "Salario:";
             // 
@@ -136,25 +148,28 @@
             "Cajero",
             "Chef",
             "Otro..."});
-            this.cbxRol.Location = new System.Drawing.Point(122, 135);
+            this.cbxRol.Location = new System.Drawing.Point(174, 225);
+            this.cbxRol.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbxRol.Name = "cbxRol";
-            this.cbxRol.Size = new System.Drawing.Size(263, 23);
+            this.cbxRol.Size = new System.Drawing.Size(374, 33);
             this.cbxRol.TabIndex = 68;
             this.cbxRol.Text = "Selecciona la ocupacion del empleado";
             this.cbxRol.SelectedIndexChanged += new System.EventHandler(this.cbxRol_SelectedIndexChanged);
             // 
             // dtpFechaNacimiento
             // 
-            this.dtpFechaNacimiento.Location = new System.Drawing.Point(534, 143);
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(763, 238);
+            this.dtpFechaNacimiento.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
-            this.dtpFechaNacimiento.Size = new System.Drawing.Size(195, 23);
+            this.dtpFechaNacimiento.Size = new System.Drawing.Size(277, 31);
             this.dtpFechaNacimiento.TabIndex = 66;
             // 
             // txtBuscador
             // 
-            this.txtBuscador.Location = new System.Drawing.Point(122, 198);
+            this.txtBuscador.Location = new System.Drawing.Point(174, 330);
+            this.txtBuscador.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBuscador.Name = "txtBuscador";
-            this.txtBuscador.Size = new System.Drawing.Size(263, 23);
+            this.txtBuscador.Size = new System.Drawing.Size(374, 31);
             this.txtBuscador.TabIndex = 65;
             this.txtBuscador.TextChanged += new System.EventHandler(this.txtBuscador_TextChanged);
             // 
@@ -163,9 +178,10 @@
             this.rbtMasculino.AutoSize = true;
             this.rbtMasculino.BackColor = System.Drawing.Color.Transparent;
             this.rbtMasculino.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rbtMasculino.Location = new System.Drawing.Point(640, 34);
+            this.rbtMasculino.Location = new System.Drawing.Point(914, 57);
+            this.rbtMasculino.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rbtMasculino.Name = "rbtMasculino";
-            this.rbtMasculino.Size = new System.Drawing.Size(89, 21);
+            this.rbtMasculino.Size = new System.Drawing.Size(134, 32);
             this.rbtMasculino.TabIndex = 64;
             this.rbtMasculino.Text = "Masculino";
             this.rbtMasculino.UseVisualStyleBackColor = false;
@@ -176,9 +192,10 @@
             this.rbtFemenino.BackColor = System.Drawing.Color.Transparent;
             this.rbtFemenino.Checked = true;
             this.rbtFemenino.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rbtFemenino.Location = new System.Drawing.Point(444, 34);
+            this.rbtFemenino.Location = new System.Drawing.Point(634, 57);
+            this.rbtFemenino.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rbtFemenino.Name = "rbtFemenino";
-            this.rbtFemenino.Size = new System.Drawing.Size(87, 21);
+            this.rbtFemenino.Size = new System.Drawing.Size(129, 32);
             this.rbtFemenino.TabIndex = 63;
             this.rbtFemenino.TabStop = true;
             this.rbtFemenino.Text = "Femenino";
@@ -186,24 +203,27 @@
             // 
             // txtRFC
             // 
-            this.txtRFC.Location = new System.Drawing.Point(444, 72);
+            this.txtRFC.Location = new System.Drawing.Point(634, 120);
+            this.txtRFC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtRFC.Name = "txtRFC";
-            this.txtRFC.Size = new System.Drawing.Size(285, 23);
+            this.txtRFC.Size = new System.Drawing.Size(405, 31);
             this.txtRFC.TabIndex = 62;
             this.txtRFC.TextChanged += new System.EventHandler(this.txtRFC_TextChanged);
             // 
             // txtApellidoPa
             // 
-            this.txtApellidoPa.Location = new System.Drawing.Point(122, 73);
+            this.txtApellidoPa.Location = new System.Drawing.Point(174, 122);
+            this.txtApellidoPa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtApellidoPa.Name = "txtApellidoPa";
-            this.txtApellidoPa.Size = new System.Drawing.Size(263, 23);
+            this.txtApellidoPa.Size = new System.Drawing.Size(374, 31);
             this.txtApellidoPa.TabIndex = 61;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(122, 36);
+            this.txtNombre.Location = new System.Drawing.Point(174, 60);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(263, 23);
+            this.txtNombre.Size = new System.Drawing.Size(374, 31);
             this.txtNombre.TabIndex = 60;
             // 
             // label8
@@ -211,9 +231,10 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(390, 38);
+            this.label8.Location = new System.Drawing.Point(557, 63);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(41, 17);
+            this.label8.Size = new System.Drawing.Size(62, 28);
             this.label8.TabIndex = 59;
             this.label8.Text = "Sexo:";
             // 
@@ -222,9 +243,10 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(390, 75);
+            this.label7.Location = new System.Drawing.Point(557, 125);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 17);
+            this.label7.Size = new System.Drawing.Size(52, 28);
             this.label7.TabIndex = 58;
             this.label7.Text = "RFC:";
             // 
@@ -234,19 +256,22 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(392, 147);
+            this.label6.Location = new System.Drawing.Point(560, 245);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(139, 17);
+            this.label6.Size = new System.Drawing.Size(212, 28);
             this.label6.TabIndex = 57;
             this.label6.Text = "Fecha de nacimiento:";
             // 
             // dgvEmpleados
             // 
             this.dgvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEmpleados.Location = new System.Drawing.Point(19, 243);
+            this.dgvEmpleados.Location = new System.Drawing.Point(27, 405);
+            this.dgvEmpleados.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvEmpleados.Name = "dgvEmpleados";
+            this.dgvEmpleados.RowHeadersWidth = 62;
             this.dgvEmpleados.RowTemplate.Height = 25;
-            this.dgvEmpleados.Size = new System.Drawing.Size(770, 264);
+            this.dgvEmpleados.Size = new System.Drawing.Size(1100, 440);
             this.dgvEmpleados.TabIndex = 56;
             this.dgvEmpleados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmpleados_CellContentClick);
             // 
@@ -255,9 +280,10 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(4, 39);
+            this.label5.Location = new System.Drawing.Point(6, 65);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 17);
+            this.label5.Size = new System.Drawing.Size(117, 28);
             this.label5.TabIndex = 55;
             this.label5.Text = "Nombre(s):";
             // 
@@ -266,9 +292,10 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(4, 76);
+            this.label4.Location = new System.Drawing.Point(6, 127);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(116, 17);
+            this.label4.Size = new System.Drawing.Size(176, 28);
             this.label4.TabIndex = 54;
             this.label4.Text = "Apellido Paterno:";
             // 
@@ -277,9 +304,10 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(4, 138);
+            this.label3.Location = new System.Drawing.Point(6, 230);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 17);
+            this.label3.Size = new System.Drawing.Size(141, 28);
             this.label3.TabIndex = 53;
             this.label3.Text = "Rol a asignar:";
             // 
@@ -288,9 +316,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(4, 201);
+            this.label2.Location = new System.Drawing.Point(6, 335);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 17);
+            this.label2.Size = new System.Drawing.Size(110, 28);
             this.label2.TabIndex = 52;
             this.label2.Text = "Buscador :";
             // 
@@ -300,17 +329,19 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(4, 2);
+            this.label1.Location = new System.Drawing.Point(6, 3);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 31);
+            this.label1.Size = new System.Drawing.Size(236, 47);
             this.label1.TabIndex = 51;
             this.label1.Text = "Empleados";
             // 
             // txtApellidoMaterno
             // 
-            this.txtApellidoMaterno.Location = new System.Drawing.Point(122, 106);
+            this.txtApellidoMaterno.Location = new System.Drawing.Point(174, 177);
+            this.txtApellidoMaterno.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtApellidoMaterno.Name = "txtApellidoMaterno";
-            this.txtApellidoMaterno.Size = new System.Drawing.Size(263, 23);
+            this.txtApellidoMaterno.Size = new System.Drawing.Size(374, 31);
             this.txtApellidoMaterno.TabIndex = 76;
             // 
             // label11
@@ -318,17 +349,19 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(4, 109);
+            this.label11.Location = new System.Drawing.Point(6, 182);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(120, 17);
+            this.label11.Size = new System.Drawing.Size(183, 28);
             this.label11.TabIndex = 75;
             this.label11.Text = "Apellido Materno:";
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(795, 262);
+            this.btnRegistrar.Location = new System.Drawing.Point(1136, 437);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(248, 23);
+            this.btnRegistrar.Size = new System.Drawing.Size(354, 38);
             this.btnRegistrar.TabIndex = 77;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
@@ -336,9 +369,10 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(795, 320);
+            this.btnEliminar.Location = new System.Drawing.Point(1136, 533);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(248, 23);
+            this.btnEliminar.Size = new System.Drawing.Size(354, 38);
             this.btnEliminar.TabIndex = 78;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -346,9 +380,10 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(795, 291);
+            this.btnModificar.Location = new System.Drawing.Point(1136, 485);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(248, 23);
+            this.btnModificar.Size = new System.Drawing.Size(354, 38);
             this.btnModificar.TabIndex = 79;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
@@ -356,9 +391,10 @@
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(795, 349);
+            this.btnLimpiar.Location = new System.Drawing.Point(1136, 582);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(248, 23);
+            this.btnLimpiar.Size = new System.Drawing.Size(354, 38);
             this.btnLimpiar.TabIndex = 80;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
@@ -367,9 +403,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.Captura_de_pantalla_2022_05_20_190252;
-            this.pictureBox1.Location = new System.Drawing.Point(795, 378);
+            this.pictureBox1.Location = new System.Drawing.Point(1136, 630);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(248, 129);
+            this.pictureBox1.Size = new System.Drawing.Size(354, 215);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 81;
             this.pictureBox1.TabStop = false;
@@ -379,20 +416,58 @@
             this.LblRFC.AutoSize = true;
             this.LblRFC.BackColor = System.Drawing.Color.Transparent;
             this.LblRFC.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblRFC.Location = new System.Drawing.Point(444, 98);
+            this.LblRFC.Location = new System.Drawing.Point(634, 163);
+            this.LblRFC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblRFC.Name = "LblRFC";
-            this.LblRFC.Size = new System.Drawing.Size(238, 26);
+            this.LblRFC.Size = new System.Drawing.Size(368, 46);
             this.LblRFC.TabIndex = 82;
             this.LblRFC.Text = "Nota: Compruebe si su RFC es correcto,\r\n una vez registrado ya no se podra modifi" +
     "car\r\n";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.pbflechaSalir);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 797);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1490, 68);
+            this.panel1.TabIndex = 90;
+            // 
+            // pbflechaSalir
+            // 
+            this.pbflechaSalir.BackColor = System.Drawing.Color.Transparent;
+            this.pbflechaSalir.Image = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.flecha;
+            this.pbflechaSalir.Location = new System.Drawing.Point(0, 0);
+            this.pbflechaSalir.Name = "pbflechaSalir";
+            this.pbflechaSalir.Size = new System.Drawing.Size(52, 70);
+            this.pbflechaSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbflechaSalir.TabIndex = 57;
+            this.pbflechaSalir.TabStop = false;
+            this.pbflechaSalir.Click += new System.EventHandler(this.pbflechaSalir_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Brown;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(1180, 1);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(129, 65);
+            this.button1.TabIndex = 67;
+            this.button1.Text = "Cerrar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Visible = false;
+            // 
             // FrmEmpleados
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.fondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1043, 519);
+            this.ClientSize = new System.Drawing.Size(1490, 865);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.LblRFC);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnLimpiar);
@@ -424,11 +499,16 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmEmpleados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Empleados";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbflechaSalir)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -467,5 +547,8 @@
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label LblRFC;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pbflechaSalir;
+        private System.Windows.Forms.Button button1;
     }
 }
