@@ -142,18 +142,6 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             //    rbtnPost.Checked = true;
             //}
 
-
-
-
-
-
-
-
-
-
-
-
-
             txtNomb.Text = dgvMenu.CurrentRow.Cells[2].Value.ToString().ToLower();
             txtCarac.Text = dgvMenu.CurrentRow.Cells[3].Value.ToString().ToLower();
             txtPrecio.Text = dgvMenu.CurrentRow.Cells[4].Value.ToString().ToLower();

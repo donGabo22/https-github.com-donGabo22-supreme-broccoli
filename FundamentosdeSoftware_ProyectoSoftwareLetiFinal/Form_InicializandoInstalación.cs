@@ -81,7 +81,6 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         private void BtnMesero_Click(object sender, EventArgs e)
         {
             Movil_Mesero_Inicio mr = new Movil_Mesero_Inicio();
-            this.Hide();
             mr.Show();
         }
     }
