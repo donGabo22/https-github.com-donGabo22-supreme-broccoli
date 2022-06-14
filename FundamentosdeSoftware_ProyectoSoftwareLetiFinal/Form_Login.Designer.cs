@@ -42,8 +42,10 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.pbflechaSalir = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbflechaSalir)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRegistro
@@ -176,6 +178,18 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.label3.TabIndex = 78;
             this.label3.Text = "Click Para ver \r\nNuestra Pagina!!";
             // 
+            // pbflechaSalir
+            // 
+            this.pbflechaSalir.BackColor = System.Drawing.Color.Transparent;
+            this.pbflechaSalir.Image = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.flecha;
+            this.pbflechaSalir.Location = new System.Drawing.Point(3, 490);
+            this.pbflechaSalir.Name = "pbflechaSalir";
+            this.pbflechaSalir.Size = new System.Drawing.Size(52, 49);
+            this.pbflechaSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbflechaSalir.TabIndex = 83;
+            this.pbflechaSalir.TabStop = false;
+            this.pbflechaSalir.Click += new System.EventHandler(this.pbflechaSalir_Click);
+            // 
             // Form_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -184,6 +198,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.fondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1171, 540);
+            this.Controls.Add(this.pbflechaSalir);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -203,6 +218,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.Load += new System.EventHandler(this.Form_Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbflechaSalir)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -222,5 +238,6 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pbflechaSalir;
     }
 }

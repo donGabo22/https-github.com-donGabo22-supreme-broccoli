@@ -305,13 +305,12 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // 
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
-            "Activado",
             "Desactivado"});
             this.comboBox3.Location = new System.Drawing.Point(12, 645);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(240, 33);
             this.comboBox3.TabIndex = 86;
-            this.comboBox3.Text = "Selecciona Una Opción";
+            this.comboBox3.Text = "Activado";
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // label6

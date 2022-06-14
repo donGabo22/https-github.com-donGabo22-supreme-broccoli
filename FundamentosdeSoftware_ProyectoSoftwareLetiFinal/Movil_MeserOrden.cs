@@ -158,6 +158,8 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Close();
+           Movil_Mesero_Inicio frmi = new Movil_Mesero_Inicio();
+            frmi.Show();
         }
 
         //private void dgvOrdenes_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -130,5 +130,12 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 
 
         }
+
+        private void pbflechaSalir_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form_InicializandoInstalación frml = new Form_InicializandoInstalación();
+            frml.Show();
+        }
     }
 }

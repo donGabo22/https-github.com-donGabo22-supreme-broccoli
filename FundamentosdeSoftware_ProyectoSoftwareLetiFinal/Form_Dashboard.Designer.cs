@@ -199,6 +199,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.BtnCaja.Size = new System.Drawing.Size(111, 115);
             this.BtnCaja.TabIndex = 4;
             this.BtnCaja.UseVisualStyleBackColor = false;
+            this.BtnCaja.Click += new System.EventHandler(this.BtnCaja_Click);
             // 
             // label3
             // 
@@ -249,7 +250,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(92, 74);
             this.label8.TabIndex = 19;
-            this.label8.Text = "38";
+            this.label8.Text = "01";
             // 
             // label7
             // 

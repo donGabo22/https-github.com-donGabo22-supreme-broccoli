@@ -8,18 +8,20 @@ using System.Windows.Forms;
 
 namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 {
-    public partial class Movil_Mesero_Menu : Form
+    public partial class Form_LoginCocina : Form
     {
-        public Movil_Mesero_Menu()
+        public Form_LoginCocina()
         {
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnIniciarCocina_Click(object sender, EventArgs e)
         {
+
+            Form_Cocina coc = new Form_Cocina();
             this.Hide();
-            Movil_Mesero_Inicio mr = new Movil_Mesero_Inicio();
-            mr.Show();
+            coc.Show();
+            
         }
     }
 }

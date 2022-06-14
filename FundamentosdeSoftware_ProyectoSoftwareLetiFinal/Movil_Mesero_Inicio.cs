@@ -31,5 +31,11 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         {
             this.Close();   
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Movil_Mesero_Inicio mr = new Movil_Mesero_Inicio();
+            mr.Show();
+        }
     }
 }

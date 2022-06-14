@@ -35,7 +35,6 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 
             if (bandera==true)
             {
-                lblEmail.Visible = false;
                 pberror.Visible = false;
                 btnFinalizarRegistro.Visible = false;//?
                 progreso.Enabled = true;
@@ -51,9 +50,6 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
                     registro1.Contraseña = txbContraseña.Text;
 
                     context.Registros.Add(registro1);
-
-
-
                     context.SaveChanges();
 
 
@@ -66,7 +62,6 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             }
             if (bandera==false)
             {
-
                 pbcorrecto.Visible = false;
                 pberror.Visible = false;
                 MessageBox.Show("correo invalido","ERROR",MessageBoxButtons.OK,MessageBoxIcon.Error);
@@ -90,7 +85,6 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 
                 label8.Text = "la contraseña " +
                    "\n coincide";
-
             }
             if (txbConfirmar.Text != txbContraseña.Text)
             {
@@ -107,25 +101,6 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             pbrTrabajo.Value = 0;
 
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         private void progreso_Tick(object sender, EventArgs e)
         {
             pbrTrabajo.Value++;

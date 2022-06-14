@@ -195,29 +195,14 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 
         private void cbxRol_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbxRol.Text== "Otro...")
+            if (cbxRol.Text == "Otro...")
             {
                 MessageBox.Show("Lo sentimos, por el momento solo tenemos esos puestos");
                 btnRegistrar.Enabled = false;
                 btnModificar.Enabled = false;
                 btnEliminar.Enabled = false;
             }
-            /* else
-             {
-                 btnRegistrar.Enabled = true;
-                 btnModificar.Enabled = true;
-                 btnEliminar.Enabled  = true; 
 
-             }*/
-            if (cbxRol.Text!="Mesero"&&cbxRol.Text!="Cajero"&&cbxRol.Text!="Chef"&&cbxRol.Text!= "Otro...")
-            {
-                MessageBox.Show("No se puede Ocupar otro puesto que no sea Mesero, Cajero o Chef");
-                btnRegistrar.Enabled=false;
-            }
-            else
-            {
-                btnRegistrar.Enabled=true;
-            }
         }
 
         private void txtRFC_TextChanged(object sender, EventArgs e)

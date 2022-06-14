@@ -1,9 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Models
 {
@@ -22,6 +17,8 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Models
         public DbSet<Menuu> Menuu { get; set; }
 
         public DbSet<MeserOrd> MeserOrd { get; set; }
+
+        public DbSet<Registradora> Registradora { get; set; }
 
     }
 }

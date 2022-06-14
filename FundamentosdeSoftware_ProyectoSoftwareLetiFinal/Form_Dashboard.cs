@@ -32,9 +32,9 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 
         private void horaYfecha_Tick(object sender, EventArgs e)
         {
-            lblHora.Text = DateTime.Now.ToString("H:mm:ss: tt");
+            lblHora.Text = DateTime.Now.ToString("H:mm:ss");
             //lblHora.Text = DateTime.Now.ToLongTimeString();
-            lblFecha.Text = DateTime.Now.ToLongDateString();
+            lblFecha.Text = DateTime.Now.ToString("d/MM/yyyy");
         }
 
         private void Form_Dashboard_Load(object sender, EventArgs e)
@@ -181,6 +181,11 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
                 Form_Login frmLogin = new Form_Login();
                 frmLogin.Show();
             }
+        }
+
+        private void BtnCaja_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("proximamanete...");
         }
     }
 
