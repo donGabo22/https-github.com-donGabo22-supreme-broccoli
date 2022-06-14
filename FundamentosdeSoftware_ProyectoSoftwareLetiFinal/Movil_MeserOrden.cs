@@ -16,32 +16,35 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 
     {
         int id;
+        public object conexion;
+
         public Movil_MeserOrden()
         {
             InitializeComponent();
         }
 
 
-        private void Movil_MeserOrden_Load(object sender, EventArgs e)
+        public void Movil_MeserOrden_Load(object sender, EventArgs e)
         {
-             try
+
+            try
             {
                 string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
                     using (SqlCommand cmd = new SqlCommand("SELECT Platillo,Precio FROM Menuu", conexion))
-                        
+
                     {
                         SqlDataReader dr = cmd.ExecuteReader();
-
-                        if (dr.Read())
+                        SqlDataReader registro = cmd.ExecuteReader();
+                        while (registro.Read())
                         {
-                            cmbxNomPlat.Items.Add(dr["Platillo"].ToString());
-                            //MessageBox.Show("no puedes poner el mismo platillo 2 veces");
-                            tbxPrecio.Text = dr["Precio"].ToString();
+                            cmbxNomPlat.Items.Add(registro["Platillo"].ToString());
 
+                            tbxPrecio.Text = registro["Precio"].ToString();
                         }
+
                         conexion.Close();
                     }
                 }
@@ -160,19 +163,23 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.Close();
         }
 
-        //private void dgvOrdenes_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        //{
-        //    id = Convert.ToInt32(dgvOrdenes.CurrentRow.Cells[0].Value.ToString());
-        //    if (dgvOrdenes.CurrentRow.Cells[1].Value.ToString() == "Platillo")
-        //    {
-        //        rbtnPlatt.Checked = true;
-        //    }
-        //    else
-        //    {
-        //        rbtnBebid.Checked = true;
-        //    }
-            
-        //}
+        private void dgvOrdenes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            id = Convert.ToInt32(dgvOrdenes.CurrentRow.Cells[0].Value.ToString());
+            if (dgvOrdenes.CurrentRow.Cells[1].Value.ToString() == "Platillo")
+            {
+                rbtnPlatt.Checked = true;
+            }
+            else
+            {
+                rbtnBebid.Checked = true;
+            }
+
+        }
+
+
+
+        
     }
 }
 

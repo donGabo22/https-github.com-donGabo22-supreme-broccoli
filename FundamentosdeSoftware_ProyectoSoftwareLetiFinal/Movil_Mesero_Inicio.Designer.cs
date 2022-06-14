@@ -30,18 +30,15 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -56,16 +53,6 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.icono_mesas;
-            this.pictureBox2.Location = new System.Drawing.Point(486, 122);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
             // 
             // panel1
             // 
@@ -85,6 +72,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.label2.Size = new System.Drawing.Size(85, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -94,23 +82,12 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 23);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Mesero :";
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button3.Location = new System.Drawing.Point(479, 178);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(117, 23);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Mesas Disponibles";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.label1.Text = "Meser@:";
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button2.Location = new System.Drawing.Point(552, 316);
+            this.button2.Location = new System.Drawing.Point(589, 223);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(69, 74);
             this.button2.TabIndex = 23;
@@ -120,9 +97,9 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // pictureBox5
             // 
             this.pictureBox5.Image = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.ordenProces;
-            this.pictureBox5.Location = new System.Drawing.Point(472, 316);
+            this.pictureBox5.Location = new System.Drawing.Point(463, 211);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(58, 69);
+            this.pictureBox5.Size = new System.Drawing.Size(78, 86);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 22;
             this.pictureBox5.TabStop = false;
@@ -130,9 +107,9 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button1.Location = new System.Drawing.Point(548, 225);
+            this.button1.Location = new System.Drawing.Point(589, 108);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(69, 50);
+            this.button1.Size = new System.Drawing.Size(88, 56);
             this.button1.TabIndex = 21;
             this.button1.Text = "Nueva Orden";
             this.button1.UseVisualStyleBackColor = false;
@@ -141,9 +118,9 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // pictureBox4
             // 
             this.pictureBox4.Image = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.iconoCarta;
-            this.pictureBox4.Location = new System.Drawing.Point(468, 225);
+            this.pictureBox4.Location = new System.Drawing.Point(463, 96);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(58, 50);
+            this.pictureBox4.Size = new System.Drawing.Size(78, 68);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 20;
             this.pictureBox4.TabStop = false;
@@ -169,15 +146,13 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Movil_Mesero_Inicio";
             this.Text = "Movil_Mesero_Inicio";
+            this.Load += new System.EventHandler(this.Movil_Mesero_Inicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -189,11 +164,9 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button button1;

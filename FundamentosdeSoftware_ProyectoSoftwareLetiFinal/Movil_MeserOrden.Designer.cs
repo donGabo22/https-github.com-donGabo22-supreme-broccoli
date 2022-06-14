@@ -31,6 +31,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -56,7 +57,6 @@
             this.rbtnPlatt = new System.Windows.Forms.RadioButton();
             this.label12 = new System.Windows.Forms.Label();
             this.cmbxNomPlat = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -97,6 +97,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(776, 57);
             this.panel1.TabIndex = 3;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(555, 16);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(52, 18);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Label";
             // 
             // label6
             // 
@@ -347,9 +358,9 @@
             this.label12.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label12.Location = new System.Drawing.Point(18, 159);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(84, 18);
+            this.label12.Size = new System.Drawing.Size(73, 18);
             this.label12.TabIndex = 65;
-            this.label12.Text = "Nombre :";
+            this.label12.Text = "Platillo :";
             // 
             // cmbxNomPlat
             // 
@@ -358,17 +369,6 @@
             this.cmbxNomPlat.Name = "cmbxNomPlat";
             this.cmbxNomPlat.Size = new System.Drawing.Size(121, 23);
             this.cmbxNomPlat.TabIndex = 73;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(555, 16);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(52, 18);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Label";
             // 
             // Movil_MeserOrden
             // 

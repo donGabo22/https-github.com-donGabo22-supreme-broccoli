@@ -10,8 +10,9 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 {
     public partial class Movil_Mesero_Inicio : Form
     {
-        public Movil_Mesero_Inicio()
+        public Movil_Mesero_Inicio(Movil_Mesero_Menu.Datos info)
         {
+            label2.Text = info.Nombre;
             InitializeComponent();
         }
 
@@ -31,5 +32,9 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         {
             this.Close();   
         }
+
+        
+
+       
     }
 }
