@@ -16,9 +16,13 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Models
 
         public DbSet<Menuu> Menuu { get; set; }
 
-        public DbSet<MeserOrd> MeserOrd { get; set; }
 
         public DbSet<Registradora> Registradora { get; set; }
+
+        public DbSet<MeseroOrden> MeseroOrden { get; set; }
+
+        public DbSet<Orden> Orden { get; set; }
+
 
     }
 }

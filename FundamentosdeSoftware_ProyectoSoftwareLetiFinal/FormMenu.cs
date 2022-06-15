@@ -27,6 +27,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             if (txtNomb.Text != "" && txtCarac.Text != "" && txtPrecio.Text != "")// Condicion para que los campos no queden vacios 
             {
                 Food();
+
             }
             else
             {

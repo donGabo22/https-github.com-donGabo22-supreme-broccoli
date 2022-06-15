@@ -80,7 +80,8 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 
         private void BtnMesero_Click(object sender, EventArgs e)
         {
-            Movil_Mesero_Menu mr = new Movil_Mesero_Menu();
+            //Movil_Mesero_Login mr = new Movil_Mesero_Login();
+            Movil_Mesero_Orden2 mr = new Movil_Mesero_Orden2();
             mr.Show();
         }
 

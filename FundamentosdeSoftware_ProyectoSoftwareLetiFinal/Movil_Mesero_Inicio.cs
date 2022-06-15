@@ -10,6 +10,8 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 {
     public partial class Movil_Mesero_Inicio : Form
     {
+
+
         public Movil_Mesero_Inicio()
         {
             InitializeComponent();
@@ -23,7 +25,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Movil_MeserOrden orden = new Movil_MeserOrden();
+            Movil_Mesero_Orden2 orden = new Movil_Mesero_Orden2();
             orden.Show();
         }
 
@@ -32,10 +34,8 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.Close();   
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Movil_Mesero_Inicio mr = new Movil_Mesero_Inicio();
-            mr.Show();
-        }
+        
+
+       
     }
 }

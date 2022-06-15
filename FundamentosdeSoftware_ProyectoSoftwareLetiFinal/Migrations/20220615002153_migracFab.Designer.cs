@@ -4,14 +4,16 @@ using FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220615002153_migracFab")]
+    partial class migracFab
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -82,7 +84,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Migrations
                     b.ToTable("Menuu");
                 });
 
-            modelBuilder.Entity("FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Models.MeseroOrden", b =>
+            modelBuilder.Entity("FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Models.MeserOrd", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -106,46 +108,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("MeseroOrden");
-                });
-
-            modelBuilder.Entity("FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Models.Orden", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("CantidadBebida")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CantidadPLatillo")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ComentarioBebida")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ComentarioPlatillo")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NombreBebida")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NombrePlatillo")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("NumeroPedido")
-                        .HasColumnType("int");
-
-                    b.Property<double>("PrecioBebida")
-                        .HasColumnType("float");
-
-                    b.Property<double>("PrecioPlatillo")
-                        .HasColumnType("float");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Orden");
+                    b.ToTable("MeserOrd");
                 });
 
             modelBuilder.Entity("FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Models.Registradora", b =>

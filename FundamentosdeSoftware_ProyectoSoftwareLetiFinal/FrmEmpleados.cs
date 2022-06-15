@@ -233,5 +233,10 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         {
             this.Close();
         }
+
+        private void FrmEmpleados_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
