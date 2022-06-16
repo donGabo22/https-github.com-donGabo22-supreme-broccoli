@@ -76,7 +76,9 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 
         private void btnLogin_Click_1(object sender, EventArgs e)
         {
-            logins();
+            FormServidos form=new FormServidos();
+            form.ShowDialog();
+            //logins();
         }
 
         

@@ -48,7 +48,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.lblTotalApagar = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaVenta = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTotalBebi = new System.Windows.Forms.Label();
@@ -71,7 +71,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.DgvPedido = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtbuscarPedido = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -131,9 +131,10 @@
             // 
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label18.Location = new System.Drawing.Point(440, 251);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(13, 15);
+            this.label18.Size = new System.Drawing.Size(14, 15);
             this.label18.TabIndex = 262;
             this.label18.Text = "$";
             // 
@@ -151,9 +152,10 @@
             // 
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label16.Location = new System.Drawing.Point(662, 253);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(13, 15);
+            this.label16.Size = new System.Drawing.Size(14, 15);
             this.label16.TabIndex = 260;
             this.label16.Text = "$";
             // 
@@ -161,9 +163,10 @@
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label14.Location = new System.Drawing.Point(662, 196);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(13, 15);
+            this.label14.Size = new System.Drawing.Size(14, 15);
             this.label14.TabIndex = 259;
             this.label14.Text = "$";
             // 
@@ -171,9 +174,10 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label10.Location = new System.Drawing.Point(440, 194);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(13, 15);
+            this.label10.Size = new System.Drawing.Size(14, 15);
             this.label10.TabIndex = 258;
             this.label10.Text = "$";
             // 
@@ -195,6 +199,7 @@
             this.dgvcaja.RowTemplate.Height = 25;
             this.dgvcaja.Size = new System.Drawing.Size(666, 174);
             this.dgvcaja.TabIndex = 256;
+            this.dgvcaja.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvcaja_CellContentClick);
             // 
             // btnRegistrarVenta
             // 
@@ -289,12 +294,12 @@
             this.label12.TabIndex = 247;
             this.label12.Text = "Total a pagar:";
             // 
-            // dateTimePicker1
+            // dtpFechaVenta
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(813, 6);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
-            this.dateTimePicker1.TabIndex = 246;
+            this.dtpFechaVenta.Location = new System.Drawing.Point(813, 6);
+            this.dtpFechaVenta.Name = "dtpFechaVenta";
+            this.dtpFechaVenta.Size = new System.Drawing.Size(200, 23);
+            this.dtpFechaVenta.TabIndex = 246;
             // 
             // label9
             // 
@@ -372,9 +377,10 @@
             // 
             this.CaracteristicasBebi.AutoSize = true;
             this.CaracteristicasBebi.BackColor = System.Drawing.Color.Transparent;
+            this.CaracteristicasBebi.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CaracteristicasBebi.Location = new System.Drawing.Point(589, 172);
             this.CaracteristicasBebi.Name = "CaracteristicasBebi";
-            this.CaracteristicasBebi.Size = new System.Drawing.Size(86, 15);
+            this.CaracteristicasBebi.Size = new System.Drawing.Size(90, 15);
             this.CaracteristicasBebi.TabIndex = 238;
             this.CaracteristicasBebi.Text = "Caractéristicas:";
             // 
@@ -394,9 +400,10 @@
             // 
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label22.Location = new System.Drawing.Point(589, 253);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(35, 15);
+            this.label22.Size = new System.Drawing.Size(37, 15);
             this.label22.TabIndex = 236;
             this.label22.Text = "Total:";
             // 
@@ -404,6 +411,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Transparent;
+            this.label23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label23.Location = new System.Drawing.Point(589, 223);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(58, 15);
@@ -414,9 +422,10 @@
             // 
             this.lbl.AutoSize = true;
             this.lbl.BackColor = System.Drawing.Color.Transparent;
+            this.lbl.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl.Location = new System.Drawing.Point(589, 196);
             this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(43, 15);
+            this.lbl.Size = new System.Drawing.Size(45, 15);
             this.lbl.TabIndex = 234;
             this.lbl.Text = "Precio:";
             // 
@@ -424,6 +433,7 @@
             // 
             this.label25.AutoSize = true;
             this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label25.Location = new System.Drawing.Point(589, 196);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(0, 15);
@@ -433,9 +443,10 @@
             // 
             this.label26.AutoSize = true;
             this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label26.Location = new System.Drawing.Point(589, 147);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(54, 15);
+            this.label26.Size = new System.Drawing.Size(56, 15);
             this.label26.TabIndex = 232;
             this.label26.Text = "Nombre:";
             // 
@@ -493,9 +504,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(364, 170);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 15);
+            this.label4.Size = new System.Drawing.Size(90, 15);
             this.label4.TabIndex = 226;
             this.label4.Text = "Caractéristicas:";
             // 
@@ -521,21 +533,22 @@
             this.DgvPedido.TabIndex = 224;
             this.DgvPedido.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvPedido_CellContentClick);
             // 
-            // textBox1
+            // txtbuscarPedido
             // 
-            this.textBox1.Location = new System.Drawing.Point(98, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(257, 23);
-            this.textBox1.TabIndex = 223;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtbuscarPedido.Location = new System.Drawing.Point(98, 40);
+            this.txtbuscarPedido.Name = "txtbuscarPedido";
+            this.txtbuscarPedido.Size = new System.Drawing.Size(257, 23);
+            this.txtbuscarPedido.TabIndex = 223;
+            this.txtbuscarPedido.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label8.Location = new System.Drawing.Point(364, 251);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 15);
+            this.label8.Size = new System.Drawing.Size(37, 15);
             this.label8.TabIndex = 222;
             this.label8.Text = "Total:";
             // 
@@ -543,6 +556,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(364, 221);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(58, 15);
@@ -553,9 +567,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(364, 194);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 15);
+            this.label6.Size = new System.Drawing.Size(45, 15);
             this.label6.TabIndex = 220;
             this.label6.Text = "Precio:";
             // 
@@ -572,9 +587,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(364, 145);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 15);
+            this.label3.Size = new System.Drawing.Size(56, 15);
             this.label3.TabIndex = 218;
             this.label3.Text = "Nombre:";
             // 
@@ -628,7 +644,7 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.lblTotalApagar);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpFechaVenta);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblTotalBebi);
@@ -651,7 +667,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.DgvPedido);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtbuscarPedido);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -694,7 +710,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label lblTotalApagar;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFechaVenta;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblTotalBebi;
@@ -717,7 +733,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DataGridView DgvPedido;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtbuscarPedido;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;

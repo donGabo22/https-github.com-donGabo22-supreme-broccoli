@@ -167,7 +167,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            FormMenu frmM = new FormMenu();
+            Form_MenuNuevoK frmM = new Form_MenuNuevoK();
             this.Hide();
             frmM.Show();
         }

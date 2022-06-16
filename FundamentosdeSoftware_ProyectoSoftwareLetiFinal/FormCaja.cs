@@ -1,7 +1,9 @@
 ﻿using FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Models;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -21,6 +23,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             btnCalcularTotal.Enabled = false;
             btnRegistrarVenta.Enabled = false;
             button1.Enabled = false;
+            txtEfectivo.Enabled = false;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -37,11 +40,14 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             calcularTtotalBebida();
             calcularTotalTotal();
             btnCalcularTotal.Enabled = false;
-            btnFinalizarVenta.Enabled = true;
+            btnFinalizarVenta.Enabled = false;
+            txtEfectivo.Enabled = true;
         }
         private void txtEfectivo_TextChanged(object sender, EventArgs e)
         {
             btnFinalizarVenta.Enabled = true;
+            
+            
         }
 
         private void btnFinalizarVenta_Click(object sender, EventArgs e)
@@ -49,13 +55,23 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             FinalizarVentaF();
             btnFinalizarVenta.Enabled = false;
             btnRegistrarVenta.Enabled = true;
+            txtEfectivo.Enabled = false;
         }
         private void btnRegistrarVenta_Click(object sender, EventArgs e)
         {
-            AñadirVenta();
-         //   TodasVentas();
-            MessageBox.Show("Gracias por su preferencia, su compra ya quedo registrada, enseguida le llegara su tiket");
-            btnRegistrarVenta.Enabled = false;
+            if (double.Parse(lblTotalApagar.Text)>double.Parse(txtEfectivo.Text))
+            {
+                MessageBox.Show("Revise el efectivo, no alcanza a pagar la deuda");
+                btnRegistrarVenta.Enabled=false;    
+            }
+            else
+            {
+                AñadirVenta();
+                   TodasVentas();
+                MessageBox.Show("Gracias por su preferencia, su compra ya quedo registrada, enseguida le llegara su tiket");
+                btnRegistrarVenta.Enabled = false;
+            }
+            
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -65,27 +81,35 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 
         private void BuscarPedido()
         {
+
             using (var context = new ApplicationDbContext())
             {
-                //  var productos = context.productos.Where(x => x.NombreProducto.Contains(txtBuscarProductos.Text)).ToList();
-                // dgvProductosVentas.DataSource = productos;
+                var pedido = context.MServidor.Where(x => x.Pedido.ToString().Contains(txtbuscarPedido.Text)).ToList();
+                DgvPedido.DataSource = pedido;
             }
+
+
+
         }
+
+
         private void AgarrarDatosPedido()
         {
 
+            Id = Convert.ToInt32(DgvPedido.CurrentRow.Cells[0].Value.ToString());
+            lblPedido.Text = DgvPedido.CurrentRow.Cells[1].Value.ToString();
+            lblNombrePlat.Text = DgvPedido.CurrentRow.Cells[2].Value.ToString();
+            lblCaracteristicasPlat.Text = DgvPedido.CurrentRow.Cells[3].Value.ToString();
+            lblPrecioPlat.Text = DgvPedido.CurrentRow.Cells[4].Value.ToString();
+            lblCantidadPlat.Text = DgvPedido.CurrentRow.Cells[5].Value.ToString();
 
 
-
-
-
-
-
-
-
-
-
-
+            lblNombreBebi.Text = DgvPedido.CurrentRow.Cells[6].Value.ToString();
+            lblCaracteristicasBebi.Text = DgvPedido.CurrentRow.Cells[7].Value.ToString();
+            lblPrecioBebida.Text = DgvPedido.CurrentRow.Cells[8].Value.ToString();
+            lblCantidadBebi.Text = DgvPedido.CurrentRow.Cells[9].Value.ToString();
+            
+            btnRegistrarVenta.Enabled = false;
 
 
 
@@ -111,7 +135,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         {
             double TOTALP = double.Parse(lblTotalPlat.Text);
             double TOTALB = double.Parse(lblTotalBebi.Text);
-            double TotalTotal = TOTALP * TOTALB;
+            double TotalTotal = TOTALP + TOTALB;
             lblTotalApagar.Text=TotalTotal.ToString();
         }
         private void FinalizarVentaF()
@@ -143,7 +167,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
                 Registro2.TotalF = (int)Double.Parse(lblTotalApagar.Text);
                 Registro2.Efectivo = (int)Double.Parse(txtEfectivo.Text);
                 Registro2.Devolucion = (int)Double.Parse(lblDevolucion.Text);
-
+                Registro2.Fecha_Venta = dtpFechaVenta.Value.Date;
                 //***********************************************************
                 context.Registradora.Add(Registro2);
                 //************************************************************+
@@ -181,10 +205,16 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             btnFinalizarVenta.Enabled = false;
             btnRegistrarVenta.Enabled = false;
             button1.Enabled = false;
+            txtEfectivo.Enabled = false;    
             
         }
 
         private void FormCaja_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvcaja_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

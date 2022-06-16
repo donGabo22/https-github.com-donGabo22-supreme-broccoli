@@ -4,14 +4,16 @@ using FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220615215601_RegistroComida")]
+    partial class RegistroComida
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -56,45 +58,6 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Empleados");
-                });
-
-            modelBuilder.Entity("FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Models.MServidor", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<double>("CantidadBebi")
-                        .HasColumnType("float");
-
-                    b.Property<double>("CantidadPlat")
-                        .HasColumnType("float");
-
-                    b.Property<string>("CaracteristicasBebi")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CaracteristicasPlat")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NombreBebida")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NombrePlatillo")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Pedido")
-                        .HasColumnType("int");
-
-                    b.Property<double>("PrecioBebi")
-                        .HasColumnType("float");
-
-                    b.Property<double>("PrecioPlat")
-                        .HasColumnType("float");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("MServidor");
                 });
 
             modelBuilder.Entity("FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Models.Menuu", b =>

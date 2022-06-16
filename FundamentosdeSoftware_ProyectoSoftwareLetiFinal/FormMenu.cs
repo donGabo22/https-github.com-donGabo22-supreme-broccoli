@@ -225,8 +225,8 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
                         }
                         else
                         {
-                            AggPlat();// Mando llamar al metodo para registrar
-                            BuscPlatillo();//Actualizar la tabla con el nuevo registro 
+                           // AggPlat();// Mando llamar al metodo para registrar
+                           // BuscPlatillo();//Actualizar la tabla con el nuevo registro 
                         }
 
                     }

@@ -22,6 +22,8 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Models
         public DbSet<MeseroOrden> MeseroOrden { get; set; }
 
         public DbSet<Orden> Orden { get; set; }
+        public DbSet<RegistroComida> RegistroComida { get; set; }
+        public DbSet<MServidor> MServidor { get; set; }
 
 
     }
