@@ -36,6 +36,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             {
                 AgregarEmplados();
                 TodosClientes();
+
             }
             else
             {
@@ -72,6 +73,8 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             {
                 var Empleados = context.Empleados.ToList();
                 dgvEmpleados.DataSource = Empleados;
+                context.SaveChanges(); //aqui
+
             }
         }
         private void AgregarEmplados()
@@ -236,6 +239,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 
         private void FrmEmpleados_Load(object sender, EventArgs e)
         {
+            BuscarClientes();
 
         }
     }

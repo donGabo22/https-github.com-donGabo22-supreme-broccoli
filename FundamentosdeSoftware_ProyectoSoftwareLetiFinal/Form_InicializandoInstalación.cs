@@ -12,6 +12,11 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 {
     public partial class Form_InicializandoInstalación : Form
     {
+        public bool banderaAdmin  = false;
+        public bool banderaMesero = false;
+        public bool banderaCocina = false;
+        public bool banderaCajero = false;
+
         public Form_InicializandoInstalación()
         {
             InitializeComponent();
@@ -48,15 +53,39 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
                 progreso.Enabled = false;
                 progreso.Stop();
                 this.Hide();
-                Form_Login frmL = new Form_Login();
-                frmL.Show();
-                //   Form_Registro frmRegistro = new Form_Registro();
-                //   frmRegistro.ShowDialog();
 
-                // Form_HoraYFecha frmHoraYFecha = new Form_HoraYFecha();
-                // frmHoraYFecha.Show();
-                //                Form_Dashboard frm = new Form_Dashboard();
-                //              frm.Show();
+                if (banderaAdmin == true)
+                {
+                    this.Hide();
+                    Form_Login frmL = new Form_Login();
+                    frmL.Show();
+                }
+
+                if (banderaMesero == true)
+                {
+                    this.Hide();
+                    Movil_Mesero_Login mr = new Movil_Mesero_Login();
+                    mr.Show();
+
+                }
+
+                if (banderaCocina== true)
+                {
+                    Form_LoginCocina lgc = new Form_LoginCocina();
+                    this.Hide();
+                    lgc.Show();
+                }
+
+                if (banderaCajero==true)
+                {
+                    Form_LoginCajero frmc = new Form_LoginCajero();
+                    this.Hide();
+                    frmc.Show();
+
+                }
+
+
+          
             }
             }
 
@@ -67,35 +96,33 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 
         private void BtnAdmin_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Querry Sotware Sigue en constante desarrollo por lo que algunas funcionalidades pueden verse limitadas, ¿Esta seguro que desea inicializar el modo Administrador? ", "QUERRY SOFTWARE", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (result == DialogResult.Yes)
-            {
-                progreso.Enabled = true;
-                lblComentario.Visible = true;
-            }
-            //FormMenu frmm = new FormMenu();
-            //frmm.Show();
+            banderaAdmin = true;
+            progreso.Enabled = true;
+            lblComentario.Visible = true;
+            
 
         }
 
         private void BtnMesero_Click(object sender, EventArgs e)
         {
-            //Movil_Mesero_Login mr = new Movil_Mesero_Login();
-            FormServidos mr = new FormServidos();
-            mr.Show();
+            banderaMesero = true;
+            progreso.Enabled = true;
+            lblComentario.Visible = true;
+
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form_LoginCocina lgc = new Form_LoginCocina();
-            this.Hide();
-            lgc.Show();
+            banderaCocina = true;
+            progreso.Enabled = true;
+            lblComentario.Visible = true;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            FormCaja frmc = new FormCaja();
-            frmc.Show();
+            banderaCajero = true;
+            progreso.Enabled = true;
+            lblComentario.Visible = true;
         }
     }
 }

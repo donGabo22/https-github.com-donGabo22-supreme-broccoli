@@ -67,12 +67,13 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             // cmbxNomPlat
             // 
             this.cmbxNomPlat.FormattingEnabled = true;
-            this.cmbxNomPlat.Location = new System.Drawing.Point(194, 165);
+            this.cmbxNomPlat.Location = new System.Drawing.Point(194, 164);
             this.cmbxNomPlat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbxNomPlat.Name = "cmbxNomPlat";
             this.cmbxNomPlat.Size = new System.Drawing.Size(278, 33);
             this.cmbxNomPlat.TabIndex = 95;
             this.cmbxNomPlat.Text = "<<<Selecciona una opción>>>>";
+            this.cmbxNomPlat.SelectedIndexChanged += new System.EventHandler(this.cmbxNomPlat_SelectedIndexChanged);
             // 
             // tbxPrecio
             // 

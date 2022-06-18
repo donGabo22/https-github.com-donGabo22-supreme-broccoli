@@ -19,7 +19,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties {
     // a través de una herramienta como ResGen o Visual Studio.
     // Para agregar o quitar un miembro, edite el archivo .ResX y, a continuación, vuelva a ejecutar ResGen
     // con la opción /str o recompile su proyecto de VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -143,6 +143,16 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap EJERCICIO__3_ {
+            get {
+                object obj = ResourceManager.GetObject("EJERCICIO (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap feis {
             get {
                 object obj = ResourceManager.GetObject("feis", resourceCulture);
@@ -166,6 +176,16 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties {
         internal static System.Drawing.Bitmap fondo {
             get {
                 object obj = ResourceManager.GetObject("fondo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fondo_rojo {
+            get {
+                object obj = ResourceManager.GetObject("fondo rojo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,6 +303,16 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap inkpx_word_art__2_ {
+            get {
+                object obj = ResourceManager.GetObject("inkpx-word-art (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap instagram {
             get {
                 object obj = ResourceManager.GetObject("instagram", resourceCulture);
@@ -336,6 +366,16 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties {
         internal static System.Drawing.Bitmap meseroo {
             get {
                 object obj = ResourceManager.GetObject("meseroo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap naranja {
+            get {
+                object obj = ResourceManager.GetObject("naranja", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

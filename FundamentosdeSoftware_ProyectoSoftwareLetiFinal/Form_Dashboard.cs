@@ -100,14 +100,14 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             }//fin del for con j
 
             //porcentajes y grados en el label
-            Pastel1.Text = "Platillo No:   " + Math.Round(porcentaje[0]);
-            pastel2.Text = "Platillo No:   " + Math.Round(porcentaje[1]);
-            pastel3.Text = "Platillo No:   " + Math.Round(porcentaje[2]);
-            pastel4.Text = "Platillo No:   " + Math.Round(porcentaje[3]);
-            pastel5.Text = "Platillo No:   " + Math.Round(porcentaje[4]);
-            pastel6.Text = "Platillo No    " + Math.Round(porcentaje[5]);
-            pastel7.Text = "Platillo No:   " + Math.Round(porcentaje[6]);
-            pastel8.Text = "Platillo No:   " + Math.Round(porcentaje[7]);  
+            Pastel1.Text = "Platillo Camarones Endiablados:   " + Math.Round(porcentaje[0]);
+            pastel2.Text = "Platillo Hamburguesa Triple:   " + Math.Round(porcentaje[1]);
+            pastel3.Text = "Platillo Menudo:   " + Math.Round(porcentaje[2]);
+            pastel4.Text = "Platillo Tacos de Ubre:   " + Math.Round(porcentaje[3]);
+            pastel5.Text = "Platillo Hamburguesa Sencilla:   " + Math.Round(porcentaje[4]);
+            pastel6.Text = "Platillo Chocoflan    " + Math.Round(porcentaje[5]);
+            pastel7.Text = "Platillo Tacos de Tripa:   " + Math.Round(porcentaje[6]);
+            pastel8.Text = "Platillo Lasaña:   " + Math.Round(porcentaje[7]);  
 
         }
 
@@ -167,6 +167,8 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Introduce un platillo o bebida a la vez a la Hora de registrar", "Aviso" +
+               "", MessageBoxButtons.OK, MessageBoxIcon.Question);
             Form_MenuNuevoK frmM = new Form_MenuNuevoK();
             this.Hide();
             frmM.Show();
@@ -185,7 +187,8 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 
         private void BtnCaja_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("proximamanete...");
+            Form_CorteCaja frmc = new Form_CorteCaja();
+            frmc.Show();
         }
     }
 

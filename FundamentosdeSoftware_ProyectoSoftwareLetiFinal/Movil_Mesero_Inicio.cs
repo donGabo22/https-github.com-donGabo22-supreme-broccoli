@@ -25,17 +25,20 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Movil_Mesero_Orden2 orden = new Movil_Mesero_Orden2();
+            FormServidos orden = new FormServidos();
             orden.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            this.Close();   
         }
 
-        
+        private void pbflechaSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Movil_Mesero_Login frmi =  new Movil_Mesero_Login();
+            frmi.Show();
 
-       
+        }
     }
 }

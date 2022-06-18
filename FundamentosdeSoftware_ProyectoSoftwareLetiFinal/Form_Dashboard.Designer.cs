@@ -276,7 +276,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.Pastel1.AutoSize = true;
             this.Pastel1.BackColor = System.Drawing.SystemColors.Control;
             this.Pastel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Pastel1.Location = new System.Drawing.Point(1550, 697);
+            this.Pastel1.Location = new System.Drawing.Point(1498, 693);
             this.Pastel1.Name = "Pastel1";
             this.Pastel1.Size = new System.Drawing.Size(78, 32);
             this.Pastel1.TabIndex = 23;
@@ -288,7 +288,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.pastel2.AutoSize = true;
             this.pastel2.BackColor = System.Drawing.SystemColors.Control;
             this.pastel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pastel2.Location = new System.Drawing.Point(1550, 729);
+            this.pastel2.Location = new System.Drawing.Point(1498, 725);
             this.pastel2.Name = "pastel2";
             this.pastel2.Size = new System.Drawing.Size(91, 32);
             this.pastel2.TabIndex = 24;
@@ -300,7 +300,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.pastel6.AutoSize = true;
             this.pastel6.BackColor = System.Drawing.SystemColors.Control;
             this.pastel6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pastel6.Location = new System.Drawing.Point(1550, 856);
+            this.pastel6.Location = new System.Drawing.Point(1498, 852);
             this.pastel6.Name = "pastel6";
             this.pastel6.Size = new System.Drawing.Size(91, 32);
             this.pastel6.TabIndex = 25;
@@ -312,7 +312,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.pastel3.AutoSize = true;
             this.pastel3.BackColor = System.Drawing.SystemColors.Control;
             this.pastel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pastel3.Location = new System.Drawing.Point(1550, 761);
+            this.pastel3.Location = new System.Drawing.Point(1498, 757);
             this.pastel3.Name = "pastel3";
             this.pastel3.Size = new System.Drawing.Size(91, 32);
             this.pastel3.TabIndex = 26;
@@ -324,7 +324,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.pastel4.AutoSize = true;
             this.pastel4.BackColor = System.Drawing.SystemColors.Control;
             this.pastel4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pastel4.Location = new System.Drawing.Point(1550, 792);
+            this.pastel4.Location = new System.Drawing.Point(1498, 788);
             this.pastel4.Name = "pastel4";
             this.pastel4.Size = new System.Drawing.Size(91, 32);
             this.pastel4.TabIndex = 27;
@@ -336,7 +336,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.pastel5.AutoSize = true;
             this.pastel5.BackColor = System.Drawing.SystemColors.Control;
             this.pastel5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pastel5.Location = new System.Drawing.Point(1550, 824);
+            this.pastel5.Location = new System.Drawing.Point(1498, 820);
             this.pastel5.Name = "pastel5";
             this.pastel5.Size = new System.Drawing.Size(91, 32);
             this.pastel5.TabIndex = 28;
@@ -348,7 +348,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.pastel7.AutoSize = true;
             this.pastel7.BackColor = System.Drawing.SystemColors.Control;
             this.pastel7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pastel7.Location = new System.Drawing.Point(1550, 888);
+            this.pastel7.Location = new System.Drawing.Point(1498, 884);
             this.pastel7.Name = "pastel7";
             this.pastel7.Size = new System.Drawing.Size(91, 32);
             this.pastel7.TabIndex = 29;
@@ -360,7 +360,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.pastel8.AutoSize = true;
             this.pastel8.BackColor = System.Drawing.SystemColors.Control;
             this.pastel8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pastel8.Location = new System.Drawing.Point(1550, 920);
+            this.pastel8.Location = new System.Drawing.Point(1498, 916);
             this.pastel8.Name = "pastel8";
             this.pastel8.Size = new System.Drawing.Size(91, 32);
             this.pastel8.TabIndex = 30;

@@ -10,13 +10,12 @@ using System.Windows.Forms;
 
 namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 {
-    public partial class Form_LoginCocina : Form
+    public partial class Form_LoginCajero : Form
     {
-        public Form_LoginCocina()
+        public Form_LoginCajero()
         {
             InitializeComponent();
         }
-
 
 
         public void logins()
@@ -27,31 +26,32 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
                 using (SqlConnection conexion = new SqlConnection(cnn))
                 {
                     conexion.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT Nombre FROM Empleados WHERE Rol_Asignado='Chef' and Nombre= '"  + textBox1.Text + "'", conexion))
+                    using (SqlCommand cmd = new SqlCommand("SELECT Nombre FROM Empleados WHERE Rol_Asignado='Cajero' and Nombre= '" + txbUsuario.Text + "'", conexion))
                     {
                         SqlDataReader dr = cmd.ExecuteReader();
 
                         if (dr.Read())
                         {
 
-                            if (textBox2.Text == "12345")
+                            if (TxbPass.Text == "12345")
                             {
-                                Form_Cocina or = new Form_Cocina();
-                                this.Hide();
+                                FormCaja or = new FormCaja();
+                                this.Close();
+
                                 or.Show();
                             }
                             else
                             {
-                                MessageBox.Show("Contraseña invalida?", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                textBox1.Text = "";
-                                textBox2.Text = "";
+                                MessageBox.Show("Contraseña inválida", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                txbUsuario.Text = "";
+                                TxbPass.Text = "";
                             }
                         }
                         else
                         {
-                            MessageBox.Show("Correo invalido", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            textBox1.Text = "";
-                            textBox2.Text = "";
+                            MessageBox.Show("Usuario invalido", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            txbUsuario.Text = "";
+                            TxbPass.Text = "";
                         }
 
                     }
@@ -68,22 +68,30 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         private void btnIniciarCocina_Click(object sender, EventArgs e)
         {
-
-
             logins();
-
-
-     
-            
         }
 
         private void pbflechaSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Form_InicializandoInstalación frmi = new Form_InicializandoInstalación();
-            frmi.Show();
+            this.Hide();
+            Form_InicializandoInstalación f = new Form_InicializandoInstalación();
+            f.Show();
         }
     }
 }

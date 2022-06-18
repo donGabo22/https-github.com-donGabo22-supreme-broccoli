@@ -130,11 +130,11 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
+            //context.SaveChanges();
             using (var context = new ApplicationDbContext())
             {
                 if (id != 0)
                 {
-
                     var platos = context.Menuu.First(x => x.Id == id);
                     if (platos != null)
                     {
@@ -146,6 +146,11 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
                 }
 
             }
+        }
+
+        private void cmbxNomPlat_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 

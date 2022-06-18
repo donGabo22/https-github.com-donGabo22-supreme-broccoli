@@ -211,12 +211,19 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
 
         private void FormCaja_Load(object sender, EventArgs e)
         {
-
+            //TodasVentas();
         }
 
         private void dgvcaja_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void pbflechaSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form_InicializandoInstalación frm = new Form_InicializandoInstalación();
+            frm.Show();
         }
     }
 }

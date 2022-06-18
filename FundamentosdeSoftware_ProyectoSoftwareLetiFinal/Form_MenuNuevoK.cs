@@ -74,6 +74,8 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             {
                 var plato= context.RegistroComida.ToList();
                 dgvMenu.DataSource = plato;
+                context.SaveChanges();
+
             }
         }
         private void ModificarDatos()
@@ -177,6 +179,17 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             }
         }
 
-        
+        private void pbflechaSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form_Dashboard frmd = new Form_Dashboard();
+            frmd.Show();
+        }
+
+        private void Form_MenuNuevoK_Load(object sender, EventArgs e)
+        {
+
+            TodosPlatos();
+        }
     }
 }

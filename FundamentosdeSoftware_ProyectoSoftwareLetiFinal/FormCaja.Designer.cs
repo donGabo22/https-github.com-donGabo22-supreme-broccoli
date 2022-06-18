@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCaja));
             this.lblPedido = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -79,9 +80,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pbflechaSalir = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvcaja)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvPedido)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbflechaSalir)).BeginInit();
             this.SuspendLayout();
             // 
             // lblPedido
@@ -89,9 +94,11 @@
             this.lblPedido.AutoSize = true;
             this.lblPedido.BackColor = System.Drawing.Color.Transparent;
             this.lblPedido.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPedido.Location = new System.Drawing.Point(471, 64);
+            this.lblPedido.ForeColor = System.Drawing.Color.Coral;
+            this.lblPedido.Location = new System.Drawing.Point(673, 107);
+            this.lblPedido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPedido.Name = "lblPedido";
-            this.lblPedido.Size = new System.Drawing.Size(29, 30);
+            this.lblPedido.Size = new System.Drawing.Size(46, 45);
             this.lblPedido.TabIndex = 266;
             this.lblPedido.Text = "--";
             // 
@@ -100,10 +107,11 @@
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label24.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label24.Location = new System.Drawing.Point(364, 69);
+            this.label24.ForeColor = System.Drawing.Color.Coral;
+            this.label24.Location = new System.Drawing.Point(520, 115);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(86, 23);
+            this.label24.Size = new System.Drawing.Size(129, 34);
             this.label24.TabIndex = 265;
             this.label24.Text = "Pedido:";
             // 
@@ -111,9 +119,11 @@
             // 
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Location = new System.Drawing.Point(901, 223);
+            this.label20.ForeColor = System.Drawing.Color.Coral;
+            this.label20.Location = new System.Drawing.Point(1586, 368);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(13, 15);
+            this.label20.Size = new System.Drawing.Size(22, 25);
             this.label20.TabIndex = 264;
             this.label20.Text = "$";
             // 
@@ -121,9 +131,11 @@
             // 
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Location = new System.Drawing.Point(901, 147);
+            this.label19.ForeColor = System.Drawing.Color.Coral;
+            this.label19.Location = new System.Drawing.Point(1586, 241);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(13, 15);
+            this.label19.Size = new System.Drawing.Size(22, 25);
             this.label19.TabIndex = 263;
             this.label19.Text = "$";
             // 
@@ -132,9 +144,11 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label18.Location = new System.Drawing.Point(440, 251);
+            this.label18.ForeColor = System.Drawing.Color.Coral;
+            this.label18.Location = new System.Drawing.Point(629, 418);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(14, 15);
+            this.label18.Size = new System.Drawing.Size(22, 25);
             this.label18.TabIndex = 262;
             this.label18.Text = "$";
             // 
@@ -142,9 +156,11 @@
             // 
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Location = new System.Drawing.Point(868, 189);
+            this.label17.ForeColor = System.Drawing.Color.Coral;
+            this.label17.Location = new System.Drawing.Point(1539, 311);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(13, 15);
+            this.label17.Size = new System.Drawing.Size(22, 25);
             this.label17.TabIndex = 261;
             this.label17.Text = "$";
             // 
@@ -153,9 +169,11 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(662, 253);
+            this.label16.ForeColor = System.Drawing.Color.Coral;
+            this.label16.Location = new System.Drawing.Point(1245, 418);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(14, 15);
+            this.label16.Size = new System.Drawing.Size(22, 25);
             this.label16.TabIndex = 260;
             this.label16.Text = "$";
             // 
@@ -164,9 +182,11 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(662, 196);
+            this.label14.ForeColor = System.Drawing.Color.Coral;
+            this.label14.Location = new System.Drawing.Point(1245, 323);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(14, 15);
+            this.label14.Size = new System.Drawing.Size(22, 25);
             this.label14.TabIndex = 259;
             this.label14.Text = "$";
             // 
@@ -175,17 +195,20 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(440, 194);
+            this.label10.ForeColor = System.Drawing.Color.Coral;
+            this.label10.Location = new System.Drawing.Point(629, 323);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(14, 15);
+            this.label10.Size = new System.Drawing.Size(22, 25);
             this.label10.TabIndex = 258;
             this.label10.Text = "$";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(813, 247);
+            this.button1.Location = new System.Drawing.Point(1460, 408);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 23);
+            this.button1.Size = new System.Drawing.Size(177, 38);
             this.button1.TabIndex = 257;
             this.button1.Text = "Limpiar";
             this.button1.UseVisualStyleBackColor = true;
@@ -194,18 +217,21 @@
             // dgvcaja
             // 
             this.dgvcaja.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvcaja.Location = new System.Drawing.Point(364, 325);
+            this.dgvcaja.Location = new System.Drawing.Point(520, 542);
+            this.dgvcaja.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvcaja.Name = "dgvcaja";
+            this.dgvcaja.RowHeadersWidth = 62;
             this.dgvcaja.RowTemplate.Height = 25;
-            this.dgvcaja.Size = new System.Drawing.Size(666, 174);
+            this.dgvcaja.Size = new System.Drawing.Size(1132, 290);
             this.dgvcaja.TabIndex = 256;
             this.dgvcaja.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvcaja_CellContentClick);
             // 
             // btnRegistrarVenta
             // 
-            this.btnRegistrarVenta.Location = new System.Drawing.Point(813, 296);
+            this.btnRegistrarVenta.Location = new System.Drawing.Point(1460, 489);
+            this.btnRegistrarVenta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRegistrarVenta.Name = "btnRegistrarVenta";
-            this.btnRegistrarVenta.Size = new System.Drawing.Size(124, 23);
+            this.btnRegistrarVenta.Size = new System.Drawing.Size(177, 38);
             this.btnRegistrarVenta.TabIndex = 255;
             this.btnRegistrarVenta.Text = "Registrar";
             this.btnRegistrarVenta.UseVisualStyleBackColor = true;
@@ -213,9 +239,10 @@
             // 
             // btnFinalizarVenta
             // 
-            this.btnFinalizarVenta.Location = new System.Drawing.Point(589, 296);
+            this.btnFinalizarVenta.Location = new System.Drawing.Point(1140, 489);
+            this.btnFinalizarVenta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnFinalizarVenta.Name = "btnFinalizarVenta";
-            this.btnFinalizarVenta.Size = new System.Drawing.Size(124, 23);
+            this.btnFinalizarVenta.Size = new System.Drawing.Size(177, 38);
             this.btnFinalizarVenta.TabIndex = 254;
             this.btnFinalizarVenta.Text = "Finalizar Venta";
             this.btnFinalizarVenta.UseVisualStyleBackColor = true;
@@ -223,9 +250,10 @@
             // 
             // btnCalcularTotal
             // 
-            this.btnCalcularTotal.Location = new System.Drawing.Point(364, 296);
+            this.btnCalcularTotal.Location = new System.Drawing.Point(520, 493);
+            this.btnCalcularTotal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCalcularTotal.Name = "btnCalcularTotal";
-            this.btnCalcularTotal.Size = new System.Drawing.Size(124, 23);
+            this.btnCalcularTotal.Size = new System.Drawing.Size(177, 38);
             this.btnCalcularTotal.TabIndex = 253;
             this.btnCalcularTotal.Text = "Calcular Total";
             this.btnCalcularTotal.UseVisualStyleBackColor = true;
@@ -233,9 +261,11 @@
             // 
             // txtEfectivo
             // 
-            this.txtEfectivo.Location = new System.Drawing.Point(887, 186);
+            this.txtEfectivo.ForeColor = System.Drawing.Color.Coral;
+            this.txtEfectivo.Location = new System.Drawing.Point(1566, 306);
+            this.txtEfectivo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtEfectivo.Name = "txtEfectivo";
-            this.txtEfectivo.Size = new System.Drawing.Size(54, 23);
+            this.txtEfectivo.Size = new System.Drawing.Size(75, 31);
             this.txtEfectivo.TabIndex = 252;
             this.txtEfectivo.TextChanged += new System.EventHandler(this.txtEfectivo_TextChanged);
             // 
@@ -244,9 +274,11 @@
             this.lblDevolucion.AutoSize = true;
             this.lblDevolucion.BackColor = System.Drawing.Color.Transparent;
             this.lblDevolucion.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblDevolucion.Location = new System.Drawing.Point(923, 221);
+            this.lblDevolucion.ForeColor = System.Drawing.Color.Coral;
+            this.lblDevolucion.Location = new System.Drawing.Point(1618, 364);
+            this.lblDevolucion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDevolucion.Name = "lblDevolucion";
-            this.lblDevolucion.Size = new System.Drawing.Size(18, 17);
+            this.lblDevolucion.Size = new System.Drawing.Size(28, 28);
             this.lblDevolucion.TabIndex = 251;
             this.lblDevolucion.Text = "--";
             // 
@@ -255,9 +287,11 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(801, 223);
+            this.label15.ForeColor = System.Drawing.Color.Coral;
+            this.label15.Location = new System.Drawing.Point(1443, 368);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(82, 17);
+            this.label15.Size = new System.Drawing.Size(124, 28);
             this.label15.TabIndex = 250;
             this.label15.Text = "Devolución:";
             // 
@@ -266,9 +300,11 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(801, 187);
+            this.label13.ForeColor = System.Drawing.Color.Coral;
+            this.label13.Location = new System.Drawing.Point(1443, 308);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(61, 17);
+            this.label13.Size = new System.Drawing.Size(94, 28);
             this.label13.TabIndex = 249;
             this.label13.Text = "Efectivo:";
             // 
@@ -277,9 +313,11 @@
             this.lblTotalApagar.AutoSize = true;
             this.lblTotalApagar.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalApagar.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTotalApagar.Location = new System.Drawing.Point(923, 143);
+            this.lblTotalApagar.ForeColor = System.Drawing.Color.Coral;
+            this.lblTotalApagar.Location = new System.Drawing.Point(1618, 234);
+            this.lblTotalApagar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalApagar.Name = "lblTotalApagar";
-            this.lblTotalApagar.Size = new System.Drawing.Size(18, 17);
+            this.lblTotalApagar.Size = new System.Drawing.Size(28, 28);
             this.lblTotalApagar.TabIndex = 248;
             this.lblTotalApagar.Text = "--";
             // 
@@ -288,17 +326,20 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(801, 145);
+            this.label12.ForeColor = System.Drawing.Color.Coral;
+            this.label12.Location = new System.Drawing.Point(1443, 238);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(94, 17);
+            this.label12.Size = new System.Drawing.Size(142, 28);
             this.label12.TabIndex = 247;
             this.label12.Text = "Total a pagar:";
             // 
             // dtpFechaVenta
             // 
-            this.dtpFechaVenta.Location = new System.Drawing.Point(813, 6);
+            this.dtpFechaVenta.Location = new System.Drawing.Point(1161, 10);
+            this.dtpFechaVenta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtpFechaVenta.Name = "dtpFechaVenta";
-            this.dtpFechaVenta.Size = new System.Drawing.Size(200, 23);
+            this.dtpFechaVenta.Size = new System.Drawing.Size(284, 31);
             this.dtpFechaVenta.TabIndex = 246;
             // 
             // label9
@@ -306,19 +347,21 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label9.Location = new System.Drawing.Point(644, 5);
+            this.label9.ForeColor = System.Drawing.Color.Coral;
+            this.label9.Location = new System.Drawing.Point(920, 8);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(163, 23);
+            this.label9.Size = new System.Drawing.Size(246, 34);
             this.label9.TabIndex = 245;
             this.label9.Text = "Fecha de venta:";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.cajebrios;
-            this.pictureBox1.Location = new System.Drawing.Point(7, 272);
+            this.pictureBox1.Location = new System.Drawing.Point(10, 453);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(348, 227);
+            this.pictureBox1.Size = new System.Drawing.Size(497, 378);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 244;
             this.pictureBox1.TabStop = false;
@@ -327,9 +370,11 @@
             // 
             this.lblTotalBebi.AutoSize = true;
             this.lblTotalBebi.BackColor = System.Drawing.Color.Transparent;
-            this.lblTotalBebi.Location = new System.Drawing.Point(696, 253);
+            this.lblTotalBebi.ForeColor = System.Drawing.Color.Coral;
+            this.lblTotalBebi.Location = new System.Drawing.Point(1293, 418);
+            this.lblTotalBebi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalBebi.Name = "lblTotalBebi";
-            this.lblTotalBebi.Size = new System.Drawing.Size(17, 15);
+            this.lblTotalBebi.Size = new System.Drawing.Size(26, 25);
             this.lblTotalBebi.TabIndex = 243;
             this.lblTotalBebi.Text = "--";
             // 
@@ -337,9 +382,11 @@
             // 
             this.lblCantidadBebi.AutoSize = true;
             this.lblCantidadBebi.BackColor = System.Drawing.Color.Transparent;
-            this.lblCantidadBebi.Location = new System.Drawing.Point(696, 223);
+            this.lblCantidadBebi.ForeColor = System.Drawing.Color.Coral;
+            this.lblCantidadBebi.Location = new System.Drawing.Point(1293, 368);
+            this.lblCantidadBebi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCantidadBebi.Name = "lblCantidadBebi";
-            this.lblCantidadBebi.Size = new System.Drawing.Size(17, 15);
+            this.lblCantidadBebi.Size = new System.Drawing.Size(26, 25);
             this.lblCantidadBebi.TabIndex = 242;
             this.lblCantidadBebi.Text = "--";
             // 
@@ -347,9 +394,11 @@
             // 
             this.lblPrecioBebida.AutoSize = true;
             this.lblPrecioBebida.BackColor = System.Drawing.Color.Transparent;
-            this.lblPrecioBebida.Location = new System.Drawing.Point(696, 196);
+            this.lblPrecioBebida.ForeColor = System.Drawing.Color.Coral;
+            this.lblPrecioBebida.Location = new System.Drawing.Point(1293, 323);
+            this.lblPrecioBebida.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrecioBebida.Name = "lblPrecioBebida";
-            this.lblPrecioBebida.Size = new System.Drawing.Size(17, 15);
+            this.lblPrecioBebida.Size = new System.Drawing.Size(26, 25);
             this.lblPrecioBebida.TabIndex = 241;
             this.lblPrecioBebida.Text = "--";
             // 
@@ -357,9 +406,11 @@
             // 
             this.lblCaracteristicasBebi.AutoSize = true;
             this.lblCaracteristicasBebi.BackColor = System.Drawing.Color.Transparent;
-            this.lblCaracteristicasBebi.Location = new System.Drawing.Point(696, 172);
+            this.lblCaracteristicasBebi.ForeColor = System.Drawing.Color.Coral;
+            this.lblCaracteristicasBebi.Location = new System.Drawing.Point(1293, 283);
+            this.lblCaracteristicasBebi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCaracteristicasBebi.Name = "lblCaracteristicasBebi";
-            this.lblCaracteristicasBebi.Size = new System.Drawing.Size(17, 15);
+            this.lblCaracteristicasBebi.Size = new System.Drawing.Size(26, 25);
             this.lblCaracteristicasBebi.TabIndex = 240;
             this.lblCaracteristicasBebi.Text = "--";
             // 
@@ -367,9 +418,11 @@
             // 
             this.lblNombreBebi.AutoSize = true;
             this.lblNombreBebi.BackColor = System.Drawing.Color.Transparent;
-            this.lblNombreBebi.Location = new System.Drawing.Point(696, 147);
+            this.lblNombreBebi.ForeColor = System.Drawing.Color.Coral;
+            this.lblNombreBebi.Location = new System.Drawing.Point(1293, 241);
+            this.lblNombreBebi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombreBebi.Name = "lblNombreBebi";
-            this.lblNombreBebi.Size = new System.Drawing.Size(17, 15);
+            this.lblNombreBebi.Size = new System.Drawing.Size(26, 25);
             this.lblNombreBebi.TabIndex = 239;
             this.lblNombreBebi.Text = "--";
             // 
@@ -378,9 +431,11 @@
             this.CaracteristicasBebi.AutoSize = true;
             this.CaracteristicasBebi.BackColor = System.Drawing.Color.Transparent;
             this.CaracteristicasBebi.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.CaracteristicasBebi.Location = new System.Drawing.Point(589, 172);
+            this.CaracteristicasBebi.ForeColor = System.Drawing.Color.Coral;
+            this.CaracteristicasBebi.Location = new System.Drawing.Point(1140, 283);
+            this.CaracteristicasBebi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CaracteristicasBebi.Name = "CaracteristicasBebi";
-            this.CaracteristicasBebi.Size = new System.Drawing.Size(90, 15);
+            this.CaracteristicasBebi.Size = new System.Drawing.Size(140, 25);
             this.CaracteristicasBebi.TabIndex = 238;
             this.CaracteristicasBebi.Text = "Caractéristicas:";
             // 
@@ -389,10 +444,11 @@
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label21.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label21.Location = new System.Drawing.Point(589, 109);
+            this.label21.ForeColor = System.Drawing.Color.Coral;
+            this.label21.Location = new System.Drawing.Point(1140, 178);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(95, 23);
+            this.label21.Size = new System.Drawing.Size(145, 34);
             this.label21.TabIndex = 237;
             this.label21.Text = "Bebidas:";
             // 
@@ -401,9 +457,11 @@
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label22.Location = new System.Drawing.Point(589, 253);
+            this.label22.ForeColor = System.Drawing.Color.Coral;
+            this.label22.Location = new System.Drawing.Point(1140, 418);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(37, 15);
+            this.label22.Size = new System.Drawing.Size(59, 25);
             this.label22.TabIndex = 236;
             this.label22.Text = "Total:";
             // 
@@ -412,9 +470,11 @@
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label23.Location = new System.Drawing.Point(589, 223);
+            this.label23.ForeColor = System.Drawing.Color.Coral;
+            this.label23.Location = new System.Drawing.Point(1140, 368);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(58, 15);
+            this.label23.Size = new System.Drawing.Size(93, 25);
             this.label23.TabIndex = 235;
             this.label23.Text = "Cantidad:";
             // 
@@ -423,9 +483,11 @@
             this.lbl.AutoSize = true;
             this.lbl.BackColor = System.Drawing.Color.Transparent;
             this.lbl.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl.Location = new System.Drawing.Point(589, 196);
+            this.lbl.ForeColor = System.Drawing.Color.Coral;
+            this.lbl.Location = new System.Drawing.Point(1140, 323);
+            this.lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(45, 15);
+            this.lbl.Size = new System.Drawing.Size(70, 25);
             this.lbl.TabIndex = 234;
             this.lbl.Text = "Precio:";
             // 
@@ -434,9 +496,11 @@
             this.label25.AutoSize = true;
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label25.Location = new System.Drawing.Point(589, 196);
+            this.label25.ForeColor = System.Drawing.Color.Coral;
+            this.label25.Location = new System.Drawing.Point(1140, 323);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(0, 15);
+            this.label25.Size = new System.Drawing.Size(0, 25);
             this.label25.TabIndex = 233;
             // 
             // label26
@@ -444,9 +508,11 @@
             this.label26.AutoSize = true;
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label26.Location = new System.Drawing.Point(589, 147);
+            this.label26.ForeColor = System.Drawing.Color.Coral;
+            this.label26.Location = new System.Drawing.Point(1140, 241);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(56, 15);
+            this.label26.Size = new System.Drawing.Size(86, 25);
             this.label26.TabIndex = 232;
             this.label26.Text = "Nombre:";
             // 
@@ -454,9 +520,11 @@
             // 
             this.lblTotalPlat.AutoSize = true;
             this.lblTotalPlat.BackColor = System.Drawing.Color.Transparent;
-            this.lblTotalPlat.Location = new System.Drawing.Point(471, 251);
+            this.lblTotalPlat.ForeColor = System.Drawing.Color.Coral;
+            this.lblTotalPlat.Location = new System.Drawing.Point(673, 418);
+            this.lblTotalPlat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalPlat.Name = "lblTotalPlat";
-            this.lblTotalPlat.Size = new System.Drawing.Size(17, 15);
+            this.lblTotalPlat.Size = new System.Drawing.Size(26, 25);
             this.lblTotalPlat.TabIndex = 231;
             this.lblTotalPlat.Text = "--";
             // 
@@ -464,9 +532,11 @@
             // 
             this.lblCantidadPlat.AutoSize = true;
             this.lblCantidadPlat.BackColor = System.Drawing.Color.Transparent;
-            this.lblCantidadPlat.Location = new System.Drawing.Point(471, 221);
+            this.lblCantidadPlat.ForeColor = System.Drawing.Color.Coral;
+            this.lblCantidadPlat.Location = new System.Drawing.Point(673, 368);
+            this.lblCantidadPlat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCantidadPlat.Name = "lblCantidadPlat";
-            this.lblCantidadPlat.Size = new System.Drawing.Size(17, 15);
+            this.lblCantidadPlat.Size = new System.Drawing.Size(26, 25);
             this.lblCantidadPlat.TabIndex = 230;
             this.lblCantidadPlat.Text = "--";
             // 
@@ -474,9 +544,11 @@
             // 
             this.lblPrecioPlat.AutoSize = true;
             this.lblPrecioPlat.BackColor = System.Drawing.Color.Transparent;
-            this.lblPrecioPlat.Location = new System.Drawing.Point(471, 194);
+            this.lblPrecioPlat.ForeColor = System.Drawing.Color.Coral;
+            this.lblPrecioPlat.Location = new System.Drawing.Point(673, 323);
+            this.lblPrecioPlat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrecioPlat.Name = "lblPrecioPlat";
-            this.lblPrecioPlat.Size = new System.Drawing.Size(17, 15);
+            this.lblPrecioPlat.Size = new System.Drawing.Size(26, 25);
             this.lblPrecioPlat.TabIndex = 229;
             this.lblPrecioPlat.Text = "--";
             // 
@@ -484,9 +556,11 @@
             // 
             this.lblCaracteristicasPlat.AutoSize = true;
             this.lblCaracteristicasPlat.BackColor = System.Drawing.Color.Transparent;
-            this.lblCaracteristicasPlat.Location = new System.Drawing.Point(471, 170);
+            this.lblCaracteristicasPlat.ForeColor = System.Drawing.Color.Coral;
+            this.lblCaracteristicasPlat.Location = new System.Drawing.Point(673, 283);
+            this.lblCaracteristicasPlat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCaracteristicasPlat.Name = "lblCaracteristicasPlat";
-            this.lblCaracteristicasPlat.Size = new System.Drawing.Size(17, 15);
+            this.lblCaracteristicasPlat.Size = new System.Drawing.Size(26, 25);
             this.lblCaracteristicasPlat.TabIndex = 228;
             this.lblCaracteristicasPlat.Text = "--";
             // 
@@ -494,9 +568,11 @@
             // 
             this.lblNombrePlat.AutoSize = true;
             this.lblNombrePlat.BackColor = System.Drawing.Color.Transparent;
-            this.lblNombrePlat.Location = new System.Drawing.Point(471, 145);
+            this.lblNombrePlat.ForeColor = System.Drawing.Color.Coral;
+            this.lblNombrePlat.Location = new System.Drawing.Point(673, 242);
+            this.lblNombrePlat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombrePlat.Name = "lblNombrePlat";
-            this.lblNombrePlat.Size = new System.Drawing.Size(17, 15);
+            this.lblNombrePlat.Size = new System.Drawing.Size(26, 25);
             this.lblNombrePlat.TabIndex = 227;
             this.lblNombrePlat.Text = "--";
             // 
@@ -505,9 +581,11 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(364, 170);
+            this.label4.ForeColor = System.Drawing.Color.Coral;
+            this.label4.Location = new System.Drawing.Point(520, 283);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 15);
+            this.label4.Size = new System.Drawing.Size(140, 25);
             this.label4.TabIndex = 226;
             this.label4.Text = "Caractéristicas:";
             // 
@@ -516,28 +594,33 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label11.Location = new System.Drawing.Point(364, 107);
+            this.label11.ForeColor = System.Drawing.Color.Coral;
+            this.label11.Location = new System.Drawing.Point(520, 178);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(89, 23);
+            this.label11.Size = new System.Drawing.Size(133, 34);
             this.label11.TabIndex = 225;
             this.label11.Text = "Platillo:";
             // 
             // DgvPedido
             // 
             this.DgvPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvPedido.Location = new System.Drawing.Point(7, 69);
+            this.DgvPedido.Location = new System.Drawing.Point(10, 115);
+            this.DgvPedido.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DgvPedido.Name = "DgvPedido";
+            this.DgvPedido.RowHeadersWidth = 62;
             this.DgvPedido.RowTemplate.Height = 25;
-            this.DgvPedido.Size = new System.Drawing.Size(348, 197);
+            this.DgvPedido.Size = new System.Drawing.Size(497, 328);
             this.DgvPedido.TabIndex = 224;
             this.DgvPedido.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvPedido_CellContentClick);
             // 
             // txtbuscarPedido
             // 
-            this.txtbuscarPedido.Location = new System.Drawing.Point(98, 40);
+            this.txtbuscarPedido.ForeColor = System.Drawing.Color.Coral;
+            this.txtbuscarPedido.Location = new System.Drawing.Point(140, 67);
+            this.txtbuscarPedido.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtbuscarPedido.Name = "txtbuscarPedido";
-            this.txtbuscarPedido.Size = new System.Drawing.Size(257, 23);
+            this.txtbuscarPedido.Size = new System.Drawing.Size(365, 31);
             this.txtbuscarPedido.TabIndex = 223;
             this.txtbuscarPedido.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -546,9 +629,11 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(364, 251);
+            this.label8.ForeColor = System.Drawing.Color.Coral;
+            this.label8.Location = new System.Drawing.Point(520, 418);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 15);
+            this.label8.Size = new System.Drawing.Size(59, 25);
             this.label8.TabIndex = 222;
             this.label8.Text = "Total:";
             // 
@@ -557,9 +642,11 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(364, 221);
+            this.label7.ForeColor = System.Drawing.Color.Coral;
+            this.label7.Location = new System.Drawing.Point(520, 368);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(58, 15);
+            this.label7.Size = new System.Drawing.Size(93, 25);
             this.label7.TabIndex = 221;
             this.label7.Text = "Cantidad:";
             // 
@@ -568,9 +655,11 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(364, 194);
+            this.label6.ForeColor = System.Drawing.Color.Coral;
+            this.label6.Location = new System.Drawing.Point(520, 323);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 15);
+            this.label6.Size = new System.Drawing.Size(70, 25);
             this.label6.TabIndex = 220;
             this.label6.Text = "Precio:";
             // 
@@ -578,9 +667,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(364, 154);
+            this.label5.ForeColor = System.Drawing.Color.Coral;
+            this.label5.Location = new System.Drawing.Point(520, 257);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 15);
+            this.label5.Size = new System.Drawing.Size(0, 25);
             this.label5.TabIndex = 219;
             // 
             // label3
@@ -588,9 +679,11 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(364, 145);
+            this.label3.ForeColor = System.Drawing.Color.Coral;
+            this.label3.Location = new System.Drawing.Point(520, 242);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 15);
+            this.label3.Size = new System.Drawing.Size(86, 25);
             this.label3.TabIndex = 218;
             this.label3.Text = "Nombre:";
             // 
@@ -598,10 +691,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(7, 43);
+            this.label2.ForeColor = System.Drawing.Color.Coral;
+            this.label2.Location = new System.Drawing.Point(10, 72);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 15);
+            this.label2.Size = new System.Drawing.Size(127, 25);
             this.label2.TabIndex = 217;
             this.label2.Text = "Buscar Pedido:";
             // 
@@ -610,20 +704,45 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(7, 6);
+            this.label1.ForeColor = System.Drawing.Color.Coral;
+            this.label1.Location = new System.Drawing.Point(10, 10);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 31);
+            this.label1.Size = new System.Drawing.Size(111, 47);
             this.label1.TabIndex = 216;
             this.label1.Text = "Caja";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.pbflechaSalir);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 862);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1665, 49);
+            this.panel1.TabIndex = 267;
+            // 
+            // pbflechaSalir
+            // 
+            this.pbflechaSalir.BackColor = System.Drawing.Color.Transparent;
+            this.pbflechaSalir.Image = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.flecha;
+            this.pbflechaSalir.Location = new System.Drawing.Point(0, 0);
+            this.pbflechaSalir.Name = "pbflechaSalir";
+            this.pbflechaSalir.Size = new System.Drawing.Size(52, 49);
+            this.pbflechaSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbflechaSalir.TabIndex = 57;
+            this.pbflechaSalir.TabStop = false;
+            this.pbflechaSalir.Click += new System.EventHandler(this.pbflechaSalir_Click);
+            // 
             // FormCaja
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.fondo;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.fondo_rojo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1037, 505);
+            this.ClientSize = new System.Drawing.Size(1665, 911);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblPedido);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label20);
@@ -675,14 +794,18 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormCaja";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "<";
+            this.Text = "caja";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormCaja_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvcaja)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvPedido)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbflechaSalir)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -741,5 +864,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pbflechaSalir;
     }
 }

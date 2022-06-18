@@ -29,13 +29,16 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Movil_Mesero_Login));
             this.pbImagen = new System.Windows.Forms.PictureBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txbUsuario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.TxbPass = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pbflechaSalir = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbflechaSalir)).BeginInit();
             this.SuspendLayout();
             // 
             // pbImagen
@@ -59,7 +62,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(139, 32);
             this.btnLogin.TabIndex = 43;
-            this.btnLogin.Text = "Iniciar Sección";
+            this.btnLogin.Text = "Iniciar Sesión";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click_1);
             // 
@@ -94,6 +97,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.TxbPass.PlaceholderText = "Password";
             this.TxbPass.Size = new System.Drawing.Size(190, 31);
             this.TxbPass.TabIndex = 44;
+            this.TxbPass.TextChanged += new System.EventHandler(this.TxbPass_TextChanged);
             // 
             // label2
             // 
@@ -108,23 +112,40 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
             this.label2.TabIndex = 45;
             this.label2.Text = "Contraseña:";
             // 
-            // Movil_Mesero_Menu
+            // pbflechaSalir
+            // 
+            this.pbflechaSalir.BackColor = System.Drawing.Color.Transparent;
+            this.pbflechaSalir.Image = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.flecha;
+            this.pbflechaSalir.Location = new System.Drawing.Point(-1, 449);
+            this.pbflechaSalir.Name = "pbflechaSalir";
+            this.pbflechaSalir.Size = new System.Drawing.Size(52, 49);
+            this.pbflechaSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbflechaSalir.TabIndex = 84;
+            this.pbflechaSalir.TabStop = false;
+            this.pbflechaSalir.Click += new System.EventHandler(this.pbflechaSalir_Click);
+            // 
+            // Movil_Mesero_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::FundamentosdeSoftware_ProyectoSoftwareLetiFinal.Properties.Resources.fondoMesero;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(560, 493);
+            this.Controls.Add(this.pbflechaSalir);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TxbPass);
             this.Controls.Add(this.pbImagen);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txbUsuario);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Movil_Mesero_Menu";
+            this.Name = "Movil_Mesero_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Movil_Mesero_Menu";
+            this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbflechaSalir)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,5 +159,6 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TxbPass;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pbflechaSalir;
     }
 }

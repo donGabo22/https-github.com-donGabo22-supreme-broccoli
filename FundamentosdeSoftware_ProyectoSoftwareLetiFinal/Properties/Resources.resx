@@ -130,6 +130,9 @@
   <data name="mesebrios" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mesebrios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pixlr-bg-result (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pixlr-bg-result (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="configuracion4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\configuracion4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -144,9 +147,6 @@
   </data>
   <data name="caja registradora" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\caja registradora.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="feis" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\feis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,14 +163,20 @@
   <data name="cocinebrios" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cocinebrios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icono mesas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono mesas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="impuestos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\impuestos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconoChef" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconoChef.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="meseroicono" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\meseroicono.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconoElim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconoElim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo rojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo rojo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconomas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconomas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,16 +214,22 @@
   <data name="ordenProces" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ordenProces.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pixlr-bg-result (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pixlr-bg-result (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="inkpx-word-art (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\inkpx-word-art (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icono mesas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icono mesas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="meseroicono" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\meseroicono.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="feis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\feis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mesero" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mesero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconoElim" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconoElim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EJERCICIO (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EJERCICIO (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="naranja" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\naranja.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -13,6 +13,8 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
     public partial class FormServidos : Form
     {
         int Id = 0;
+
+
         public FormServidos()
         {
             InitializeComponent();
@@ -31,7 +33,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         }
         private void txtBuscarBebida_TextChanged(object sender, EventArgs e)
         {
-            BuscarBebida();
+//            BuscarBebida();
         }
         private void DgvPlatillo_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -39,7 +41,7 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         }
         private void DgvBebida_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            AgarrarDatosBebida();
+          //  AgarrarDatosBebida();
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -236,10 +238,10 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
         private void txtCantidadBebida_TextChanged(object sender, EventArgs e)
         {
 
-            if (txtCantidadBebida.Text != "")
-            {
-                btnRegistrar.Enabled = true;
-            }
+            //////if (txtCantidadBebida.Text != "")
+            //////{
+            //////    btnRegistrar.Enabled = true;
+            //////}
         }
 
         private void txtPedido_TextChanged(object sender, EventArgs e)
@@ -251,12 +253,21 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
                 if (existe == true)
                 {
                     //si no existe se agrega
-                    MessageBox.Show("El pedido: " + txtPedido.Text + " ya a sido registrado, meta nuevo pedido");
+                    lblvalidez.ForeColor = Color.Red;
+
+                    lblvalidez.Text = "ID Invalido";
+                    pbbueno.Visible = false;
+                    pbmalo.Visible = true;
+               //     MessageBox.Show("El pedido: " + txtPedido.Text + " ya a sido registrado, meta nuevo pedido");
                     btnRegistrar.Enabled = false;
 
                 }
                 else
                 {
+                    lblvalidez.ForeColor= Color.Green;
+                    lblvalidez.Text = "ID valido";
+                    pbmalo.Visible = false;
+                    pbbueno.Visible = true;
                     existe = false;
                     btnRegistrar.Enabled = true;
 
@@ -278,5 +289,61 @@ namespace FundamentosdeSoftware_ProyectoSoftwareLetiFinal
                 txtCantidadBebida.Enabled = false;
             }
         }
+
+        private void FormServidos_Load(object sender, EventArgs e)
+        {
+
+
+            // TodosPedidos();
+            //    AgarrarDatosPlatillo();
+            //  AgarrarDatosBebida();
+
+
+        }
+
+        private void pbflechaSalir_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            this.Close();
+            Form_InicializandoInstalación f = new Form_InicializandoInstalación();
+            f.Show();
+        }
+
+        private void txtBuscarBebida_TextChanged_1(object sender, EventArgs e)
+        {
+            BuscarBebida();
+          
+        }
+
+        private void DgvBebida_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+                AgarrarDatosBebida();
+
+        }
+
+        private void txtCantidadBebida_TextChanged_1(object sender, EventArgs e)
+        {
+            if (txtCantidadBebida.Text != "")
+            {
+                btnRegistrar.Enabled = true;
+            }
+        }
+
+        //.....................................................................................................................
+
+        //private void txtBuscarBebida_TextChanged_1(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void DgvBebida_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        //{
+
+        //}
+
+        //private void txtCantidadBebida_TextChanged_1(object sender, EventArgs e)
+        //{
+
+        //}
     }
 }
